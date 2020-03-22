@@ -1,6 +1,6 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, NavLink  } from 'react-router-dom';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link  } from 'react-router-dom';
 const Navbar = () => {
   return (
    <div>
