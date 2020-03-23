@@ -1,15 +1,24 @@
 import React from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from '../../views/logo-mini.svg';
+import menu from '../../views/hamburger.svg';
 import { Link  } from 'react-router-dom';
 const Navbar = () => {
   return (
-   <div>
-    <nav className="navbar nav-tabs navbar-light bg-light justify-content-center">
-      <Link className="nav-link" to="/">Home</Link>
-      <Link className="nav-link" to="/Exercise">Ćwiczenia</Link>
-      <Link className="nav-link" to="/LengthTest">Test</Link>
+   
+    <nav className="navbar nav-tabs navbar-light bg-light justify-content-around">
+      <Link className="nav-link" to="/">
+        <div>
+          <img src={logo} alt="logo"></img>
+        </div>
+      </Link>
+      
+      <Link className="nav-link" to="/LengthTest">
+        <div>
+          <img src={menu} alt="menu"></img>
+        </div>
+      </Link>
     </nav>
-  </div>
+  
   )
 };
 
