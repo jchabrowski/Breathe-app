@@ -5,14 +5,13 @@ import logo from '../../views/logo.svg';
 // import Test from '../LengthTest/LengthTest';
 // import Exercise from '../Exercise/Exercise';
 import { Container, BoxLogo, Buttons, Button } from '../../styles/Styles';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
 
   return (
     <div className="container-sm  d-sm-flex align-items-center justify-content-center px-0">
-      
       <Container className="col-sm-12 col-md-8 col-lg-6 align-items-center text-center">
         <BoxLogo>
           <img src={logo} alt="logo"></img>
@@ -27,11 +26,11 @@ const Home = () => {
             <Button>Twoje ćwiczenia</Button>
           </Link>
           
-
-          <Button>Informacje</Button>
+          <Link to ="/Info">
+            <Button>Informacje</Button>
+          </Link>
         </Buttons> 
       </Container>
-      
     </div>
   )
 };

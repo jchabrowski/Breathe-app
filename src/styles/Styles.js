@@ -57,3 +57,17 @@ padding: 0;
   margin: 0.7rem;
   font-size: 1.5rem;
   `;
+
+  export const Paragraph = styled.p`
+  font-size: 1.3rem;
+  font-weight: bold;
+  // font-family: Montserrat;
+  color: #78CFBA;
+  `
+
+  export const ParagraphMuted = styled.p`
+  font-size: 1.2rem;
+  font-weight: regular;
+  // font-family: Montserrat;
+  color: #78CFBA;
+  `
