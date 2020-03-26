@@ -1,7 +1,4 @@
 import React from 'react';
-// import styled from 'styled-components';
-// import background from '../../views/wave-background.svg';
-// import logo from '../../views/logo.svg';
 import { SecondaryContainer, InvertedButton, CenterContainer } from '../../styles/Styles';
 import { Link  } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';

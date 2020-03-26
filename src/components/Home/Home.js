@@ -1,7 +1,7 @@
 import React from 'react';
 // import styled from 'styled-components';
 // import background from '../../views/wave-background.svg';
-import logo from '../../views/logo.svg';
+import logo from '../../assets/images/logo.svg'
 // import Test from '../LengthTest/LengthTest';
 // import Exercise from '../Exercise/Exercise';
 import { Container, BoxLogo, Buttons, Button } from '../../styles/Styles';

@@ -1,12 +1,10 @@
 import React from 'react';
-// import styled from 'styled-components';
-// import background from '../../views/wave-background.svg';
-// import logo from '../../views/logo.svg';
+import Velocity from 'velocity-animate';
 import { SecondaryContainer, InvertedButton, CenterContainer, Paragraph, ParagraphMuted } from '../../styles/Styles';
-import Circle from '../../views/Circle.png'
+import Circle from '../../assets/images/Circle.svg'
 import Navbar from '../Navbar/Navbar';
 
-const Start = () => {
+const StartTest = () => {
 
   return (
     <div className="container-sm  d-sm-flex align-items-center justify-content-center px-0">
@@ -14,8 +12,11 @@ const Start = () => {
         <Navbar></Navbar>
         <div className="container py-5">
           <Paragraph>Przygotuj się...</Paragraph>
+
+
           <div className="container py-3">
-            <img src={Circle} alt="Circle"></img>
+            {/* {Circle.Velocity()} */}
+            {/* <img src={Circle} alt="Circle"></img> */}
           </div>
           <ParagraphMuted>Wdech...</ParagraphMuted>
         </div>
@@ -28,4 +29,4 @@ const Start = () => {
   )
 };
 
-export default Start;
+export default StartTest;
