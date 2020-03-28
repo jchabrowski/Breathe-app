@@ -1,5 +1,5 @@
 import React from 'react';
-import { SecondaryContainer, InvertedButton, CenterContainer, Paragraph, ParagraphMuted } from '../../styles/Styles';
+import { SecondaryContainer, InvertedButton, CenterContainer, Paragraph} from '../../styles/Styles';
 import { Link  } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 
