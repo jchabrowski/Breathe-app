@@ -6,16 +6,22 @@ import logo from '../../assets/images/logo.svg'
 // import Exercise from '../Exercise/Exercise';
 import { Container, BoxLogo, Buttons, Button } from '../../styles/Styles';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 
 const Home = () => {
 
   return (
-    <div className="container-sm  d-sm-flex align-items-center justify-content-center px-0">
+    <div className="container-sm d-sm-flex justify-content-center px-0">
       <Container className="col-sm-12 col-md-8 col-lg-6 align-items-center text-center">
-        <BoxLogo>
-          <img src={logo} alt="logo"></img>
-        </BoxLogo>
+        <motion.div 
+          exit={{opacity: 0}}
+          animate={{opacity: 1}}
+          initial={{opacity: 0}}>
+          <BoxLogo>
+            <img src={logo} alt="logo"></img>
+          </BoxLogo>
+        </motion.div>
 
         <Buttons className="d-flex flex-column align-items-center">
           <Link to="/LengthTest">

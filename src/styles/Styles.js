@@ -2,12 +2,17 @@ import styled from 'styled-components';
 import background from '../assets/images/background.svg';
 // import backgroundShort from '../assets/images/background-short.svg'
 
+  // export const LogoContainer = styled.div`
+    
+  // `
+
   export const Container = styled.div`
     background-image: url(${background});
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
+    bottom: 0;
     margin: 0;
     padding: 0;
   `;
@@ -23,16 +28,18 @@ import background from '../assets/images/background.svg';
   `;
 
   export const BoxLogo = styled.div`
-    padding-top: 10em;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   `
 
   export const Buttons = styled.div`
-    padding-top: 17em;
+    padding-top: 5rem;
   `
 
   export const CenterContainer = styled.div`
     padding-top: 3rem;
-    padding-bottom: 5rem;
+    margin-bottom: 0;
+    height: 50%;
   `
 
   export const Button = styled.button`
@@ -45,6 +52,14 @@ import background from '../assets/images/background.svg';
     padding: 1rem;
     margin: 0.7rem;
     font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      box-shadow:  3px 3px 7px #000;
+      transition: box-shadow 0.3s ease-in-out;
+    };
+    &:focus {
+      outline: 0;
+    };
   `;
 
   export const InvertedButton = styled.button`
@@ -57,6 +72,13 @@ import background from '../assets/images/background.svg';
     padding: 1rem;
     margin: 0.7rem;
     font-size: 1.5rem;
+    &:hover {
+      box-shadow:  3px 3px 7px #000;
+      transition: box-shadow 0.3s ease-in-out;
+    };
+    &:focus {
+      outline: 0;
+    };
   `;
 
   export const Paragraph = styled.p`
