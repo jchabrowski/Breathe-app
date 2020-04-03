@@ -7,8 +7,8 @@ import { motion } from 'framer-motion';
 const Exercise = () => {
 
   return (
-    <div className="container-sm  d-sm-flex align-items-center justify-content-center px-0">
-      <SecondaryContainer className="col-sm-12 col-md-8 col-lg-6 align-items-center text-center">
+    <div className="container d-flex align-items-center justify-content-center px-0">
+      <SecondaryContainer className="col-sm-12 col-md-10 col-lg-8 align-items-center text-center">
         <Navbar></Navbar>
         <motion.div 
           className="container py-5"
@@ -18,7 +18,7 @@ const Exercise = () => {
 
           <Paragraph>PLACEHOLDER</Paragraph>
           <Link to="/">
-            <InvertedButton>Wróc do Menu</InvertedButton>
+            <InvertedButton>Wróć do Menu</InvertedButton>
           </Link>
         </motion.div>
 

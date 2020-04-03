@@ -14,13 +14,11 @@ function App() {
   return (
   <BrowserRouter>
     <AnimatePresence>
-      
         <Route exact path="/" component={Home}/>
         <Route path="/LengthTest" component={LengthTest}/>
         <Route path="/StartTest" component={StartTest}/>
         <Route path="/Exercise" component={Exercise}/>    
         <Route path="/Info" component={Info}/>
-      
     </AnimatePresence>
   </BrowserRouter>
   );

@@ -8,39 +8,49 @@ import background from '../assets/images/background.svg';
 
   export const Container = styled.div`
     background-image: url(${background});
-    background-position: 50% 100%;
+    background-position: 50% 120%;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
     bottom: 0;
     margin: 0;
     padding: 0;
+    min-width: 500px;
+    max-width: 500px;
   `;
 
   export const SecondaryContainer = styled.div`
     background-image: url(${background});
-    background-position: 50% 150%;
+    background-position: 50% 130%;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
     margin: 0;
     padding: 0;
+    min-width: 500px;
+    max-width: 500px;
   `;
-
-  export const BoxLogo = styled.div`
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  `
-
-  export const Buttons = styled.div`
-    padding-top: 5rem;
-  `
-
+  
   export const CenterContainer = styled.div`
     padding-top: 3rem;
-    margin-bottom: 0;
-    height: 50%;
+  `;
+
+  export const BottomContainer = styled.div`
+  position: absolute;
+  bottom: 100px;
   `
+
+  export const Filler = styled.div`
+  height: 150px;
+  `
+
+  export const BoxLogo = styled.div`
+    
+  `;
+
+  export const Buttons = styled.div`
+    
+  `;
 
   export const Button = styled.button`
     background-color: #FFFFFF;
@@ -85,7 +95,12 @@ import background from '../assets/images/background.svg';
     font-size: 1.3rem;
     font-weight: bold;
     color: #78CFBA;
-  `
+  `;
+  export const ParagraphSmaller = styled.p`
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #a0ddce;
+  `;
 
   export const ParagraphMuted = styled.p`
     font-size: 1.2rem;

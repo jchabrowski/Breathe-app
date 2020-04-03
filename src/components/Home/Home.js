@@ -4,7 +4,7 @@ import React from 'react';
 import logo from '../../assets/images/logo.svg'
 // import Test from '../LengthTest/LengthTest';
 // import Exercise from '../Exercise/Exercise';
-import { Container, BoxLogo, Buttons, Button } from '../../styles/Styles';
+import { Container, BoxLogo, Buttons, Button, Filler } from '../../styles/Styles';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -12,9 +12,10 @@ import { motion } from 'framer-motion';
 const Home = () => {
 
   return (
-    <div className="container-sm d-sm-flex justify-content-center px-0">
-      <Container className="col-sm-12 col-md-8 col-lg-6 align-items-center text-center">
-        <motion.div 
+    <div className="container d-flex justify-content-center px-0">
+      <Container className="container d-flex flex-column col-sm-12 col-md-10 col-lg-8 align-items-center flex-grow-1 justify-content-around text-center">
+        <Filler></Filler>
+        <motion.div className=""
           exit={{opacity: 0}}
           animate={{opacity: 1}}
           initial={{opacity: 0}}>
@@ -22,8 +23,9 @@ const Home = () => {
             <img src={logo} alt="logo"></img>
           </BoxLogo>
         </motion.div>
+        <Filler></Filler>
 
-        <Buttons className="d-flex flex-column align-items-center">
+        <Buttons className="container d-flex flex-column justify-content-center align-items-center">
           <Link to="/LengthTest">
             <Button>Rozpocznij test</Button>
           </Link>
