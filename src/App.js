@@ -5,14 +5,14 @@ import LengthTest from './components/LengthTest/LengthTest'
 import StartTest from './components/LengthTest/StartTest'
 import Exercise from './components/Exercise/Exercise';
 import Info from './components/Info/Info';
-import {  BrowserRouter, Route, Switch } from 'react-router-dom';
+import {  HashRouter, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import './App.css';
 
 function App() {
   return (
-  <BrowserRouter>
+  <HashRouter>
     <AnimatePresence>
         <Route exact path="/" component={Home}/>
         <Route path="/LengthTest" component={LengthTest}/>
@@ -20,7 +20,7 @@ function App() {
         <Route path="/Exercise" component={Exercise}/>    
         <Route path="/Info" component={Info}/>
     </AnimatePresence>
-  </BrowserRouter>
+  </HashRouter>
   );
 }
 
