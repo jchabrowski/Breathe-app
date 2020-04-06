@@ -1,23 +1,30 @@
 import styled from 'styled-components';
 import background from '../assets/images/background.svg';
+import { Container } from 'react-bootstrap';
 // import backgroundShort from '../assets/images/background-short.svg'
 
   // export const LogoContainer = styled.div`
     
   // `
 
-  export const Container = styled.div`
-    background-image: url(${background});
-    background-position: 50% 120%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-    min-width: 500px;
-    max-width: 500px;
+  export const MainContainer = styled(Container)`
+  max-width: 500px;
+  background: rgb(120,207,186);
+  background: linear-gradient(0deg, rgba(120, 207, 186, 1) 0%, rgba(255, 255, 255, 1) 100%);
   `;
+
+  // export const Container = styled.div`
+  //   background-image: url(${background});
+  //   background-position: 50% 120%;
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   height: 100vh;
+  //   bottom: 0;
+  //   margin: 0;
+  //   padding: 0;
+  //   min-width: 500px;
+  //   max-width: 500px;
+  // `;
 
   export const SecondaryContainer = styled.div`
     background-image: url(${background});

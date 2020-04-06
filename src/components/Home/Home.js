@@ -1,20 +1,20 @@
 import React from 'react';
-// import styled from 'styled-components';
-// import background from '../../views/wave-background.svg';
+import { Col, Row } from 'react-bootstrap';
 import logo from '../../assets/images/logo.svg'
-// import Test from '../LengthTest/LengthTest';
-// import Exercise from '../Exercise/Exercise';
-import { Container, BoxLogo, Buttons, Button, Filler } from '../../styles/Styles';
+import { BoxLogo, Button, Buttons, MainContainer } from '../../styles/Styles';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 
 const Home = () => {
-
   return (
-    <div className="container d-flex justify-content-center px-0">
-      <Container className="container d-flex flex-column col-sm-12 col-md-10 col-lg-8 align-items-center flex-grow-1 justify-content-around text-center">
-        <Filler></Filler>
+  <MainContainer className="d-flex min-vh-100 flex-column justify-content-center">
+    <Row>
+      <Col
+        className="text-center my-5"
+        xs= { 12 }
+        md={{ span: 6, offset: 3 }}
+        lg={{ span: 4, offset: 4 }}>
         <motion.div className=""
           exit={{opacity: 0}}
           animate={{opacity: 1}}
@@ -23,9 +23,8 @@ const Home = () => {
             <img src={logo} alt="logo"></img>
           </BoxLogo>
         </motion.div>
-        <Filler></Filler>
-
-        <Buttons className="container d-flex flex-column justify-content-center align-items-center">
+        
+        <Buttons className="d-flex flex-column justify-content-center align-items-center mt-5">
           <Link to="/LengthTest">
             <Button>Rozpocznij test</Button>
           </Link>
@@ -38,8 +37,9 @@ const Home = () => {
             <Button>Informacje</Button>
           </Link>
         </Buttons> 
-      </Container>
-    </div>
+      </Col>
+    </Row>
+  </MainContainer>
   )
 };
 
