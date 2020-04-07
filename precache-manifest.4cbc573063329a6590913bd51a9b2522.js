@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a4d6f2cd294afaa93d63a0342acac5fa",
+    "revision": "0bb50184263aa33a042e1119ca4aa3e6",
     "url": "/Breathe-app/index.html"
   },
   {
-    "revision": "3b7e637d5eadd1416341",
+    "revision": "127b801e179e1c4af269",
     "url": "/Breathe-app/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "b8febac3bc3bed954e68",
+    "revision": "8ac5f60b733ede0b0f98",
     "url": "/Breathe-app/static/css/main.d585d8ac.chunk.css"
   },
   {
-    "revision": "3b7e637d5eadd1416341",
-    "url": "/Breathe-app/static/js/2.1d71c999.chunk.js"
+    "revision": "127b801e179e1c4af269",
+    "url": "/Breathe-app/static/js/2.eee8cb23.chunk.js"
   },
   {
-    "revision": "e2eae84c7a1d31e04c786e0eb21cdeb1",
-    "url": "/Breathe-app/static/js/2.1d71c999.chunk.js.LICENSE.txt"
+    "revision": "283e247fcd70152d45e39e6e5a17cbed",
+    "url": "/Breathe-app/static/js/2.eee8cb23.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b8febac3bc3bed954e68",
-    "url": "/Breathe-app/static/js/main.edccee7f.chunk.js"
+    "revision": "8ac5f60b733ede0b0f98",
+    "url": "/Breathe-app/static/js/main.dbd35644.chunk.js"
   },
   {
     "revision": "f093678bb22c5af2a636",
