@@ -10,7 +10,7 @@ const Info = () => {
     <MainContainer className="d-flex min-vh-100 flex-column justify-content-center px-0">
       <Row className="mx-auto">
         <Col
-          className="text-center my-5 mx-auto "
+          className="text-center my-5 py-4 mx-auto "
           xs= { 12 }
           md={ 12 }
           lg={ 12 }>
@@ -18,7 +18,7 @@ const Info = () => {
             <Paragraph>Aplikacja "oddech" wykorzystuje uzyskany w teście czas wydechu i na jego podstawie ustala długość ćwiczeń, dobranych do Pana/i możliwości.</Paragraph>
             <Paragraph>Aby ćwiczenia były skuteczne powinny być wykonywane codziennie, w ilości 3 serii.</Paragraph>
             <Link to="/">
-              <Button>Wróć do Menu</Button>
+              <Button className="mb-5">Wróć do Menu</Button>
             </Link>
             </motion.div>
         </Col>
