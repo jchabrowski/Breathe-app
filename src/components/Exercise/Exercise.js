@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap'; 
-import { MainContainer, Button, Paragraph, ParagraphSmaller } from '../../styles/Styles';
+import { MainContainer, Button, Paragraph } from '../../styles/Styles';
 import { Link  } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';

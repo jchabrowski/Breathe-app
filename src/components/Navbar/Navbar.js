@@ -12,28 +12,32 @@ const navStyle = {
   bottom: '0px',
 };
 
+const linkStyle = {
+  padding: '10px 0px',
+};
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-dark bg-dark justify-content-around" style={navStyle}>
-      <Link className="nav-link" to="/">
+      <Link className="nav-link" to="/" style={linkStyle}>
         <div>
           <img src={menu} alt="menu"></img>
         </div>
       </Link>
       
-      <Link className="nav-link" to="/LengthTest">
+      <Link className="nav-link" to="/LengthTest" style={linkStyle}>
         <div>
           <img src={test} alt="test"></img>
         </div>
       </Link>
 
-      <Link className="nav-link" to="/Exercise">
+      <Link className="nav-link" to="/Exercise" style={linkStyle}>
         <div>
           <img src={trening} alt="trening"></img>
         </div>
       </Link>
 
-      <Link className="nav-link" to="/Info">
+      <Link className="nav-link" to="/Info" style={linkStyle}>
         <div>
           <img src={info} alt="info"></img>
         </div>
