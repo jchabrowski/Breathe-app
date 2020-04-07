@@ -12,7 +12,7 @@ export const StartTest = () => {
     <MainContainer className="d-flex min-vh-100 flex-column justify-content-center px-0">
       <Row className="mx-auto">
         <Col
-          className="text-center my-5 mx-auto "
+          className="text-center my-5 py-4 mx-auto"
           xs= { 12 }
           md={ 12 }
           lg={ 12 }>
@@ -30,7 +30,7 @@ export const StartTest = () => {
             <Paragraph>W ciągu 3 sekund, podczas gdy okrąg będzie rósł, należy wciągnąć nosem jak najwięcej powietrza. </Paragraph>
             <Paragraph>Następnie okrąg zacznie się zmniejszać. W tym czasie proszę postarać się jak najdłużej wydmuchiwać powietrze ustami. W momencie w którym skończy Pan/i wydech należy nacisnąć przycisk stop.</Paragraph>
             <ParagraphSmaller>Jeżeli poczuje się Pan/i słabo należy przerwać próbę.</ParagraphSmaller>
-            <Button>Start!</Button>
+            <Button className="mb-5">Start!</Button>
         </Col>
     </Row>
     <Navbar></Navbar>

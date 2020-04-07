@@ -6,7 +6,7 @@ import trening from '../../assets/images/trening.svg';
 import info from '../../assets/images/info.svg';
 
 const navStyle = {
-  position: 'absolute',
+  position: 'fixed',
   width: '100%',
   maxWidth: '500px',
   bottom: '0px',
@@ -18,7 +18,7 @@ const linkStyle = {
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-dark bg-dark justify-content-around" style={navStyle}>
+    <nav className="navbar navbar-dark bg-dark justify-content-around mt-3" style={navStyle}>
       <Link className="nav-link" to="/" style={linkStyle}>
         <div>
           <img src={menu} alt="menu"></img>
