@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Breathe-app/static/css/main.d585d8ac.chunk.css",
-    "main.js": "/Breathe-app/static/js/main.dbd35644.chunk.js",
-    "main.js.map": "/Breathe-app/static/js/main.dbd35644.chunk.js.map",
+    "main.js": "/Breathe-app/static/js/main.aef21ba4.chunk.js",
+    "main.js.map": "/Breathe-app/static/js/main.aef21ba4.chunk.js.map",
     "runtime-main.js": "/Breathe-app/static/js/runtime-main.6d67d853.js",
     "runtime-main.js.map": "/Breathe-app/static/js/runtime-main.6d67d853.js.map",
     "static/css/2.de424728.chunk.css": "/Breathe-app/static/css/2.de424728.chunk.css",
     "static/js/2.eee8cb23.chunk.js": "/Breathe-app/static/js/2.eee8cb23.chunk.js",
     "static/js/2.eee8cb23.chunk.js.map": "/Breathe-app/static/js/2.eee8cb23.chunk.js.map",
     "index.html": "/Breathe-app/index.html",
-    "precache-manifest.4cbc573063329a6590913bd51a9b2522.js": "/Breathe-app/precache-manifest.4cbc573063329a6590913bd51a9b2522.js",
+    "precache-manifest.e1f535f1eb2c25277d2288104f1f475d.js": "/Breathe-app/precache-manifest.e1f535f1eb2c25277d2288104f1f475d.js",
     "service-worker.js": "/Breathe-app/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/Breathe-app/static/css/2.de424728.chunk.css.map",
     "static/css/main.d585d8ac.chunk.css.map": "/Breathe-app/static/css/main.d585d8ac.chunk.css.map",
@@ -27,6 +27,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.eee8cb23.chunk.js",
     "static/css/main.d585d8ac.chunk.css",
-    "static/js/main.dbd35644.chunk.js"
+    "static/js/main.aef21ba4.chunk.js"
   ]
 }
