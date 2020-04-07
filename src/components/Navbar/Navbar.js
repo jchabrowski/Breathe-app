@@ -7,8 +7,9 @@ import info from '../../assets/images/info.svg';
 
 const navStyle = {
   position: 'absolute',
-  bottom: '0px',
   width: '100%',
+  maxWidth: '500px',
+  bottom: '0px',
 };
 
 const Navbar = () => {

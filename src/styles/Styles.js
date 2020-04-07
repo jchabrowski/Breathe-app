@@ -13,19 +13,6 @@ import { Container } from 'react-bootstrap';
   background: linear-gradient(0deg, rgba(120, 207, 186, 1) 0%, rgba(255, 255, 255, 1) 100%);
   `;
 
-  // export const Container = styled.div`
-  //   background-image: url(${background});
-  //   background-position: 50% 120%;
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-  //   height: 100vh;
-  //   bottom: 0;
-  //   margin: 0;
-  //   padding: 0;
-  //   min-width: 500px;
-  //   max-width: 500px;
-  // `;
-
   export const SecondaryContainer = styled.div`
     background-image: url(${background});
     background-position: 50% 130%;
@@ -47,9 +34,6 @@ import { Container } from 'react-bootstrap';
   bottom: 100px;
   `
 
-  export const Filler = styled.div`
-  height: 150px;
-  `
 
   export const BoxLogo = styled.div`
     
@@ -100,14 +84,16 @@ import { Container } from 'react-bootstrap';
 
   export const Paragraph = styled.p`
     font-size: 1.3rem;
-    font-weight: bold;
-    color: #78CFBA;
+    font-weight: regular;
+    // color: #78CFBA;
+    color: #216353;
   `;
   export const ParagraphSmaller = styled.p`
     font-size: 1.1rem;
-    font-weight: bold;
-    color: #a0ddce;
-  `;
+    font-weight: regular;
+    // color: #a0ddce;
+    color: #216353;
+    `;
 
   export const ParagraphMuted = styled.p`
     font-size: 1.2rem;

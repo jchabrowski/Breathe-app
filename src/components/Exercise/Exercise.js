@@ -1,5 +1,6 @@
 import React from 'react';
-import { SecondaryContainer, InvertedButton, CenterContainer, Paragraph } from '../../styles/Styles';
+import { Row, Col } from 'react-bootstrap'; 
+import { MainContainer, Button, Paragraph, ParagraphSmaller } from '../../styles/Styles';
 import { Link  } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';
@@ -7,26 +8,23 @@ import { motion } from 'framer-motion';
 const Exercise = () => {
 
   return (
-    <div className="container d-flex align-items-center justify-content-center px-0">
-      <SecondaryContainer className="col-sm-12 col-md-10 col-lg-8 align-items-center text-center">
-        <Navbar></Navbar>
-        <motion.div 
-          className="container py-5"
-          exit={{opacity: 0}}
-          animate={{opacity: 1}}
-          initial={{opacity: 0}}>
-
-          <Paragraph>PLACEHOLDER</Paragraph>
-          <Link to="/">
-            <InvertedButton>Wróć do Menu</InvertedButton>
-          </Link>
-        </motion.div>
-
-        <CenterContainer className="d-flex flex-column align-items-center py-0">
-          
-        </CenterContainer>
-      </SecondaryContainer>
-    </div>
+    <MainContainer className="d-flex min-vh-100 flex-column justify-content-center px-0">
+      <Row className="mx-auto">
+        <Col
+          className="text-center my-5 mx-auto "
+          xs= { 12 }
+          md={ 12 }
+          lg={ 12 }>
+            <motion.div className="container pt-5">
+              <Paragraph>Placeholder.</Paragraph>
+              <Link to="/">
+                <Button>Wróc do Menu</Button>
+              </Link>
+            </motion.div>
+        </Col>
+    </Row>
+    <Navbar></Navbar>
+  </MainContainer>
   )
 };
 
