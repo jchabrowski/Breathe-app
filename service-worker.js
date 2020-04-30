@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Breathe-app/precache-manifest.ed436e3c26495c39816387206f56711c.js"
+  "/Breathe-app/precache-manifest.6aa838b5ba7a2dd83fcc4886070b2203.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,32 +1,35 @@
 {
   "files": {
     "main.css": "/Breathe-app/static/css/main.d585d8ac.chunk.css",
-    "main.js": "/Breathe-app/static/js/main.48aa461a.chunk.js",
-    "main.js.map": "/Breathe-app/static/js/main.48aa461a.chunk.js.map",
+    "main.js": "/Breathe-app/static/js/main.7d9d11d1.chunk.js",
+    "main.js.map": "/Breathe-app/static/js/main.7d9d11d1.chunk.js.map",
     "runtime-main.js": "/Breathe-app/static/js/runtime-main.6d67d853.js",
     "runtime-main.js.map": "/Breathe-app/static/js/runtime-main.6d67d853.js.map",
     "static/css/2.de424728.chunk.css": "/Breathe-app/static/css/2.de424728.chunk.css",
-    "static/js/2.eee8cb23.chunk.js": "/Breathe-app/static/js/2.eee8cb23.chunk.js",
-    "static/js/2.eee8cb23.chunk.js.map": "/Breathe-app/static/js/2.eee8cb23.chunk.js.map",
+    "static/js/2.8aa61350.chunk.js": "/Breathe-app/static/js/2.8aa61350.chunk.js",
+    "static/js/2.8aa61350.chunk.js.map": "/Breathe-app/static/js/2.8aa61350.chunk.js.map",
     "index.html": "/Breathe-app/index.html",
-    "precache-manifest.ed436e3c26495c39816387206f56711c.js": "/Breathe-app/precache-manifest.ed436e3c26495c39816387206f56711c.js",
+    "precache-manifest.6aa838b5ba7a2dd83fcc4886070b2203.js": "/Breathe-app/precache-manifest.6aa838b5ba7a2dd83fcc4886070b2203.js",
     "service-worker.js": "/Breathe-app/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/Breathe-app/static/css/2.de424728.chunk.css.map",
     "static/css/main.d585d8ac.chunk.css.map": "/Breathe-app/static/css/main.d585d8ac.chunk.css.map",
-    "static/js/2.eee8cb23.chunk.js.LICENSE.txt": "/Breathe-app/static/js/2.eee8cb23.chunk.js.LICENSE.txt",
+    "static/js/2.8aa61350.chunk.js.LICENSE.txt": "/Breathe-app/static/js/2.8aa61350.chunk.js.LICENSE.txt",
     "static/media/Circle.svg": "/Breathe-app/static/media/Circle.0b465ace.svg",
     "static/media/background.svg": "/Breathe-app/static/media/background.d4c9e566.svg",
     "static/media/info.svg": "/Breathe-app/static/media/info.fd40061b.svg",
+    "static/media/left-arrow.svg": "/Breathe-app/static/media/left-arrow.b7651a07.svg",
     "static/media/logo.svg": "/Breathe-app/static/media/logo.43d6cc86.svg",
     "static/media/menu.svg": "/Breathe-app/static/media/menu.d1a0fc42.svg",
+    "static/media/nose.svg": "/Breathe-app/static/media/nose.86bb7cf7.svg",
+    "static/media/right-arrow.svg": "/Breathe-app/static/media/right-arrow.651533e9.svg",
     "static/media/test.svg": "/Breathe-app/static/media/test.8a0e3abc.svg",
     "static/media/trening.svg": "/Breathe-app/static/media/trening.9a290468.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6d67d853.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.eee8cb23.chunk.js",
+    "static/js/2.8aa61350.chunk.js",
     "static/css/main.d585d8ac.chunk.css",
-    "static/js/main.48aa461a.chunk.js"
+    "static/js/main.7d9d11d1.chunk.js"
   ]
 }

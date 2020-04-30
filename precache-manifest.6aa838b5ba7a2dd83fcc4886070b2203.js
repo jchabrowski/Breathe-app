@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d5f5e6638dd94f92bd3c3d2f45cefd23",
+    "revision": "a6a4777584f3fd37297cbbda3f298bd4",
     "url": "/Breathe-app/index.html"
   },
   {
-    "revision": "127b801e179e1c4af269",
+    "revision": "dda431cba6e2848558d9",
     "url": "/Breathe-app/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "7371ea3891a897e89eeb",
+    "revision": "ea97480ddb27e967b16c",
     "url": "/Breathe-app/static/css/main.d585d8ac.chunk.css"
   },
   {
-    "revision": "127b801e179e1c4af269",
-    "url": "/Breathe-app/static/js/2.eee8cb23.chunk.js"
+    "revision": "dda431cba6e2848558d9",
+    "url": "/Breathe-app/static/js/2.8aa61350.chunk.js"
   },
   {
     "revision": "283e247fcd70152d45e39e6e5a17cbed",
-    "url": "/Breathe-app/static/js/2.eee8cb23.chunk.js.LICENSE.txt"
+    "url": "/Breathe-app/static/js/2.8aa61350.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7371ea3891a897e89eeb",
-    "url": "/Breathe-app/static/js/main.48aa461a.chunk.js"
+    "revision": "ea97480ddb27e967b16c",
+    "url": "/Breathe-app/static/js/main.7d9d11d1.chunk.js"
   },
   {
     "revision": "f093678bb22c5af2a636",
@@ -40,12 +40,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Breathe-app/static/media/info.fd40061b.svg"
   },
   {
+    "revision": "b7651a07d1161cbd8e630867f8e4e096",
+    "url": "/Breathe-app/static/media/left-arrow.b7651a07.svg"
+  },
+  {
     "revision": "43d6cc86765d37a9b46305b6f54d3e26",
     "url": "/Breathe-app/static/media/logo.43d6cc86.svg"
   },
   {
     "revision": "d1a0fc42eae3b00f24bebe4adcdc5626",
     "url": "/Breathe-app/static/media/menu.d1a0fc42.svg"
+  },
+  {
+    "revision": "86bb7cf72ea0fb5ef209d8b1aee57ba2",
+    "url": "/Breathe-app/static/media/nose.86bb7cf7.svg"
+  },
+  {
+    "revision": "651533e96b07972b5a21617e9a17065d",
+    "url": "/Breathe-app/static/media/right-arrow.651533e9.svg"
   },
   {
     "revision": "8a0e3abc08f5720ee6125d6d2d3d36b8",
