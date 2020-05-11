@@ -1,27 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import leftArrow from '../../assets/images/left-arrow.svg'
-import { Paragraph }  from '../../styles/Styles';
+import leftDownArrow from '../../assets/images/left-down-arrow.svg'
+import { Paragraph } from '../../styles/Styles';
 
-const LeftArrowAnimation = () => {
+const LeftDownArrowAnimation = () => {
   return (
     <React.Fragment>
       <motion.div className="container py-2 d-flex justify-content-start px-0"
-        animate={{x:[0, 10, 0],  y:[0, -10, 0]}}
+        animate={{x:[0, -10, 0],  y:[0, 10, 0]}}
         transition={{ duration:2, loop: 4}}
         initial={{opacity: 1}}
         >
-        <img src={leftArrow} alt="left-arrow"></img>
+        <img src={leftDownArrow} alt="left-down-arrow"></img>
       </motion.div>
 
       <motion.div
         animate={{opacity: [1, 0.4, 1]}}
         transition={{ease: "easeInOut", duration:2, loop: 4}}
         >
-        <Paragraph>Wdech...</Paragraph>
+        <Paragraph>Wydech...</Paragraph>
       </motion.div>
     </React.Fragment>
   );
 };
 
-export default LeftArrowAnimation;
+export default LeftDownArrowAnimation;
