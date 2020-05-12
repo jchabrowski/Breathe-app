@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Row, Col } from 'react-bootstrap'; 
-import { MainContainer, Button, Paragraph } from '../../styles/Styles';
+import { MainContainer, Button } from '../../styles/Styles';
 import { Link  } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';
@@ -15,14 +15,22 @@ import PauseAnimation from '../Animations/PauseAnimation';
 
 
 const Exercise = () => {
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     let animationArray = []
-  //     switch ():
-  //       case 0:  
-  //   })
-  // })
+  
+  const [currentAnimation, setAnimation] = useState();
+  useEffect(() => {
+    let i = 0;
+    let animationArray = [<LeftArrowAnimation/>, <RightArrowAnimation/>, <LeftDownArrowAnimation/>, <RightDownArrowAnimation/>, <PauseAnimation/>]
+    const interval = setInterval(() => {
+      let currentAnimation = animationArray[i];
+      setAnimation(currentAnimation);
+      i++;
+      console.log(i);
+      if(i >= animationArray.length) {
+        return () => clearInterval(interval)
+      };
+    }, 8000);
+    return () => clearInterval(interval)
+  })
 
   return (
     <MainContainer className="d-flex min-vh-100 flex-column justify-content-center px-0">
@@ -36,13 +44,13 @@ const Exercise = () => {
               <img src={nose} alt="nose"></img>
             </motion.div>
 
-            { }
+            {currentAnimation ? currentAnimation : null}
 
-            <LeftArrowAnimation />
+            {/* <LeftArrowAnimation />
             <RightArrowAnimation />
             <LeftDownArrowAnimation />
             <RightDownArrowAnimation />
-            <PauseAnimation />
+            <PauseAnimation /> */}
             
             <motion.div className="container pt-3 d-flex justify-content-center">
               <Link to="/">
