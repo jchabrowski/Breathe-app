@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap'; 
 import { MainContainer, Button, Paragraph } from '../../styles/Styles';
 import { Link  } from 'react-router-dom';
@@ -12,7 +12,17 @@ import RightDownArrowAnimation from '../Animations/RightDownArrowAnimation';
 import PauseAnimation from '../Animations/PauseAnimation';
 
 
+
+
 const Exercise = () => {
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     let animationArray = []
+  //     switch ():
+  //       case 0:  
+  //   })
+  // })
 
   return (
     <MainContainer className="d-flex min-vh-100 flex-column justify-content-center px-0">
@@ -25,6 +35,8 @@ const Exercise = () => {
             <motion.div className="container d-flex justify-content-center">
               <img src={nose} alt="nose"></img>
             </motion.div>
+
+            { }
 
             <LeftArrowAnimation />
             <RightArrowAnimation />
