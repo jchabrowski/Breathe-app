@@ -29,16 +29,17 @@ const Exercise = () => {
     const breathingAnimation = () => {
       let currentAnimation = animationArray[i];
       setAnimation(currentAnimation);
+      console.log(i)
     }
 
     const animationInterval = setInterval(() => {
       i++
       breathingAnimation();
       if(i >= animationArray.length) {
-        return () => clearInterval(animationInterval)
+        clearInterval(animationInterval)
       }
     }, 4000);
-    return () => clearInterval(animationInterval)
+    // return () => clearInterval(animationInterval)
   }, [])
 
   
