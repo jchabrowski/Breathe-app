@@ -6,7 +6,7 @@ import { Paragraph } from '../../styles/Styles';
 const PauseAnimation = () => {
   return (
   <React.Fragment>
-    <motion.div
+    <motion.div className="container py-2 d-flex justify-content-center px-0"
       animate={{opacity: [1, 0.8, 1]}}
       transition={{ease: "easeInOut", duration:2, loop: 4}}
       >
@@ -17,7 +17,7 @@ const PauseAnimation = () => {
       animate={{opacity: [1, 0.4, 1]}}
       transition={{ease: "easeInOut", duration:2, loop: 4}}
       >
-      <Paragraph>Wydech...</Paragraph>
+      <Paragraph>Wstrzymaj oddech...</Paragraph>
     </motion.div>
   </React.Fragment>
   );

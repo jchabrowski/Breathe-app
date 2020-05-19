@@ -17,20 +17,28 @@ import PauseAnimation from '../Animations/PauseAnimation';
 const Exercise = () => {
   
   const [currentAnimation, setAnimation] = useState();
+
   useEffect(() => {
+
     let i = 0;
-    let animationArray = [<LeftArrowAnimation/>, <RightArrowAnimation/>, <LeftDownArrowAnimation/>, <RightDownArrowAnimation/>, <PauseAnimation/>]
-    const interval = setInterval(() => {
+    let animationArray = [<LeftArrowAnimation/>, <PauseAnimation/>, <RightDownArrowAnimation/>, <RightArrowAnimation/>, <LeftDownArrowAnimation/>, <PauseAnimation/> ]
+    let currentAnimation = animationArray[i]
+    setAnimation(currentAnimation);
+
+    
+    const animationInterval = setInterval(() => {
       let currentAnimation = animationArray[i];
       setAnimation(currentAnimation);
       i++;
-      console.log(i);
+
       if(i >= animationArray.length) {
-        return () => clearInterval(interval)
-      };
-    }, 8000);
-    return () => clearInterval(interval)
-  })
+        clearInterval(animationInterval)
+      }
+    }, 2000);
+    return () => clearInterval(animationInterval)
+  }, [])
+
+  
 
   return (
     <MainContainer className="d-flex min-vh-100 flex-column justify-content-center px-0">
@@ -45,16 +53,10 @@ const Exercise = () => {
             </motion.div>
 
             {currentAnimation ? currentAnimation : null}
-
-            {/* <LeftArrowAnimation />
-            <RightArrowAnimation />
-            <LeftDownArrowAnimation />
-            <RightDownArrowAnimation />
-            <PauseAnimation /> */}
             
             <motion.div className="container pt-3 d-flex justify-content-center">
               <Link to="/">
-                <Button>Wróc do Menu</Button>
+                <Button>Wróć do Menu</Button>
               </Link>
             </motion.div>
         </Col>
