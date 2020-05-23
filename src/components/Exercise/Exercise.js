@@ -34,11 +34,10 @@ const Exercise = () => {
 
     const animationInterval = setInterval(() => {
       i++
+        if(i >= animationArray.length) {
+          i = 0;
+        }
       breathingAnimation();
-      if(i >= animationArray.length) {
-        i = 0;
-        breathingAnimation();
-      }
     }, 4000);
     
     setTimeout(() => {
@@ -47,7 +46,7 @@ const Exercise = () => {
       setAnimation(currentAnimation);
       console.log('animation cleared');
     }, 150000)
-  }, [])
+  }, []);
 
   
 
