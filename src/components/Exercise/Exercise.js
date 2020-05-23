@@ -36,7 +36,7 @@ const Exercise = () => {
       i++
       breathingAnimation();
       if(i >= animationArray.length) {
-        clearInterval(animationInterval)
+        clearInterval(animationInterval);
       }
     }, 4000);
     // return () => clearInterval(animationInterval)
