@@ -12,7 +12,7 @@ const Home = () => {
     <Row>
       <Col
         className="text-center my-5"
-        xs= { 12 }
+        xs={ 12 }
         md={{ span: 6, offset: 3 }}
         lg={{ span: 4, offset: 4 }}>
         <motion.div className=""

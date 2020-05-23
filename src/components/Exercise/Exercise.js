@@ -10,6 +10,7 @@ import RightArrowAnimation from '../Animations/RightArrowAnimation';
 import LeftDownArrowAnimation from '../Animations/LeftDownArrowAnimation';
 import RightDownArrowAnimation from '../Animations/RightDownArrowAnimation';
 import PauseAnimation from '../Animations/PauseAnimation';
+import ThankYouAnimation from '../Animations/ThankYouAnimation';
 
 
 
@@ -29,17 +30,23 @@ const Exercise = () => {
     const breathingAnimation = () => {
       let currentAnimation = animationArray[i];
       setAnimation(currentAnimation);
-      console.log(i)
     }
 
     const animationInterval = setInterval(() => {
       i++
       breathingAnimation();
       if(i >= animationArray.length) {
-        clearInterval(animationInterval);
+        i = 0;
+        breathingAnimation();
       }
     }, 4000);
-    // return () => clearInterval(animationInterval)
+    
+    setTimeout(() => {
+      clearInterval(animationInterval);
+      let currentAnimation = <ThankYouAnimation />
+      setAnimation(currentAnimation);
+      console.log('animation cleared');
+    }, 150000)
   }, [])
 
   
@@ -49,14 +56,14 @@ const Exercise = () => {
       <Row className="mx-auto">
         <Col
           className="text-center my-5 mx-auto"
-          xs= { 6 }
+          xs={ 6 }
           md={{span: 6, offset: 3}}
           lg={{span: 6, offset: 3}}>
             <motion.div className="container d-flex justify-content-center">
               <img src={nose} alt="nose"></img>
             </motion.div>
 
-            {currentAnimation ? currentAnimation : null}
+            {currentAnimation}
             
             <motion.div className="container pt-3 d-flex justify-content-center">
               <Link to="/">

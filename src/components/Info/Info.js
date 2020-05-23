@@ -4,6 +4,7 @@ import { MainContainer, Button, Paragraph} from '../../styles/Styles';
 import { Link  } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';
+import smiley from '../../assets/images/smiley.svg';
 const Info = () => {
 
   return (
@@ -11,13 +12,13 @@ const Info = () => {
       <Row className="mx-auto">
         <Col
           className="text-center my-5 py-4 mx-auto "
-          xs= { 12 }
+          xs={ 12 }
           md={ 12 }
           lg={ 12 }>
             <motion.div className="container pt-5">
-            <Paragraph>Aplikacja "oddech" bazuje na podstawowej technice jogi, Pranajama. Protokół oddechowy nie wymaga specjalistycznego sprzętu, więc może być </Paragraph>
+            <Paragraph>Aplikacja "oddech" bazuje na podstawowej technice jogi - Pranajama. Protokół oddechowy nie wymaga specjalistycznego sprzętu, więc może być wykonywany przez wszystkich seniorów.</Paragraph>
             <Paragraph>Ćwiczenia należy wykonywać trzykrotnie w ciągu dnia. Wykonanie pojedynczej jednostki treningowej zajmuje 10 minut.</Paragraph>
-            <Paragraph>Powodzenia :) </Paragraph>
+            <Paragraph>Powodzenia <img src={smiley} alt="smiley"></img> </Paragraph>
             <Link to="/">
               <Button className="mb-5">Wróć do Menu</Button>
             </Link>

@@ -12,7 +12,7 @@ const Test = () => {
     <Row className="mx-auto">
       <Col
         className="text-center my-5 mx-auto "
-        xs= { 12 }
+        xs={ 12 }
         md={ 12 }
         lg={ 12 }>
         

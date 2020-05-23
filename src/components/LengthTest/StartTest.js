@@ -13,21 +13,22 @@ export const StartTest = () => {
       <Row className="mx-auto">
         <Col
           className="text-center my-5 py-4 mx-auto"
-          xs= { 12 }
+          xs={ 12 }
           md={ 12 }
           lg={ 12 }>
             <motion.div className="container pt-5"
               initial={{width: "200px", height:"200px"}}
               animate={{
-                scale: [1, 1.7, 1]
+                scale: [1, 1.5, 0.5]
               }}
               transition={{ 
-                duration: 4, 
-                loop: 2 }}
+                duration: 30,
+                times: [0, 0.1, 1],
+                }}
                 >
               <img src={Circle} alt="Circle"/>
             </motion.div>
-            <Paragraph>W ciągu 3 sekund, podczas gdy okrąg będzie rósł, nalżey wciągnąć nosem jak najwięcej powietrza. </Paragraph>
+            <Paragraph>W ciągu 3 sekund, podczas gdy okrąg będzie rósł, należy wciągnąć nosem jak najwięcej powietrza. </Paragraph>
             <Paragraph>Następnie okrąg zacznie się zmniejszać. W tym czasie proszę postarać się jak najdłużej wydmuchiwać powietrze ustami. W momencie w którym skończy Pan/i wydech należy nacisnąć przycisk stop.</Paragraph>
             <ParagraphSmaller>Jeżeli poczuje się Pan/i słabo należy przerwać próbę.</ParagraphSmaller>
             <Button className="mb-5">Start!</Button>
