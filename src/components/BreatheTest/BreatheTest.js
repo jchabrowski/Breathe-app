@@ -24,7 +24,7 @@ const Test = () => {
           <Paragraph>Aby przejść dalej proszę nacisnąć przycisk "Rozpocznij".</Paragraph>
           <ParagraphSmaller>Pojawi się dalsza instrukcja!</ParagraphSmaller>
 
-          <Link to="/StartTest"> 
+          <Link to="/InfoTest"> 
             <Button>Rozpocznij</Button>
           </Link>
         </motion.div>

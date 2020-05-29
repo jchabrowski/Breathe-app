@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Paragraph }  from '../../styles/Styles';
+import { Paragraph }  from '../../../styles/Styles';
 
 const ThankYouAnimation = () => {
   return (
@@ -8,6 +8,7 @@ const ThankYouAnimation = () => {
       <motion.div className="container pt-2 justify-content-center px-0"
         animate={{opacity: [0.7, 0.4, 0.7]}}
         transition={{ease: "easeInOut", duration:2, loop: 4}}
+        key
         >
         <Paragraph>Ćwiczenia zakończone!</Paragraph>
       </motion.div>

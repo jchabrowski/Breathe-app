@@ -4,13 +4,14 @@ import { MainContainer, Button } from '../../styles/Styles';
 import { Link  } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';
+import Timer from 'react-compound-timer';
 import nose  from '../../assets/images/nose.svg';
-import LeftArrowAnimation from '../Animations/LeftArrowAnimation';
-import RightArrowAnimation from '../Animations/RightArrowAnimation';
-import LeftDownArrowAnimation from '../Animations/LeftDownArrowAnimation';
-import RightDownArrowAnimation from '../Animations/RightDownArrowAnimation';
-import PauseAnimation from '../Animations/PauseAnimation';
-import ThankYouAnimation from '../Animations/ThankYouAnimation';
+import LeftArrowAnimation from '../Animations/ExerciseAnimations/LeftArrowAnimation';
+import RightArrowAnimation from '../Animations/ExerciseAnimations/RightArrowAnimation';
+import LeftDownArrowAnimation from '../Animations/ExerciseAnimations/LeftDownArrowAnimation';
+import RightDownArrowAnimation from '../Animations/ExerciseAnimations/RightDownArrowAnimation';
+import PauseAnimation from '../Animations/ExerciseAnimations/PauseAnimation';
+import ThankYouAnimation from '../Animations/ExerciseAnimations/ThankYouAnimation';
 
 
 
@@ -63,6 +64,17 @@ const Exercise = () => {
             </motion.div>
 
             {currentAnimation}
+            
+            <Timer  formatValue={(value) => `${(value < 10? `0${value}` : value)}`}
+              initialTime={600000}
+              direction="backward">
+                {
+                  <React.Fragment>
+                    <Timer.Minutes />:
+                    <Timer.Seconds />
+                  </React.Fragment>
+                }
+            </Timer>
             
             <motion.div className="container pt-3 d-flex justify-content-center">
               <Link to="/">

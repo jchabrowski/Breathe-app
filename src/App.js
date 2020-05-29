@@ -1,8 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home/Home';
-import LengthTest from './components/LengthTest/LengthTest'
-import StartTest from './components/LengthTest/StartTest'
+import BreatheTest from './components/BreatheTest/BreatheTest';
+import InfoTest from './components/BreatheTest/InfoTest';
+import StartTest from './components/BreatheTest/StartTest';
 import Exercise from './components/Exercise/Exercise';
 import Info from './components/Info/Info';
 import {  HashRouter, Route } from 'react-router-dom';
@@ -14,11 +15,12 @@ function App() {
   return (
   <HashRouter>
     <AnimatePresence>
-        <Route exact path="/" component={Home}/>
-        <Route path="/LengthTest" component={LengthTest}/>
-        <Route path="/StartTest" component={StartTest}/>
-        <Route path="/Exercise" component={Exercise}/>    
-        <Route path="/Info" component={Info}/>
+        <Route exact path="/" component={Home} />
+        <Route path="/BreatheTest" component={BreatheTest} />
+        <Route path="/InfoTest" component={InfoTest} />
+        <Route path="/Exercise" component={Exercise} />    
+        <Route path="/Info" component={Info} />
+        <Route path="/StartTest" component={StartTest} />
     </AnimatePresence>
   </HashRouter>
   );

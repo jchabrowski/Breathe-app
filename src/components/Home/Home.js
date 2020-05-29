@@ -25,8 +25,8 @@ const Home = () => {
         </motion.div>
         
         <Buttons className="d-flex flex-column justify-content-center align-items-center mt-5">
-          <Link to="/LengthTest">
-            <Button>Rozpocznij test</Button>
+          <Link to="/BreatheTest">
+            <Button>Test</Button>
           </Link>
 
           <Link to="/Exercise">

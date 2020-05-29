@@ -85,9 +85,15 @@ import { Container } from 'react-bootstrap';
   export const Paragraph = styled.p`
     font-size: 1.3rem;
     font-weight: regular;
-    // color: #78CFBA;
     color: #216353;
   `;
+
+  export const OneLineParagraph = styled.p`
+    font-size: 1.3rem;
+    font-weight: regular;
+    color: #216353;
+    max-width: 500px;
+  `
   export const ParagraphSmaller = styled.p`
     font-size: 1.1rem;
     font-weight: regular;

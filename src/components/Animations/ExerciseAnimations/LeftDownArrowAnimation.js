@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import leftDownArrow from '../../assets/images/left-down-arrow.svg'
-import { Paragraph } from '../../styles/Styles';
+import leftDownArrow from '../../../assets/images/left-down-arrow.svg'
+import { Paragraph } from '../../../styles/Styles';
 
 const LeftDownArrowAnimation = () => {
   return (
@@ -10,6 +10,7 @@ const LeftDownArrowAnimation = () => {
         animate={{x:[0, -10, 0],  y:[0, 10, 0]}}
         transition={{ duration:2, loop: 4}}
         initial={{opacity: 1}}
+        key={leftDownArrow}
         >
         <img src={leftDownArrow} alt="left-down-arrow"></img>
       </motion.div>
