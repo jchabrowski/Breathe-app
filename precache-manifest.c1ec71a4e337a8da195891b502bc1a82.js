@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e613d253e492697a25ce26f765e89fb3",
+    "revision": "c6d23230ffbc7b706dd79b62253203c8",
     "url": "/Breathe-app/index.html"
   },
   {
-    "revision": "500cd4815e2bcdae1729",
+    "revision": "fb2f53ece856c8fb6951",
     "url": "/Breathe-app/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "7f76bf4ef91a5fa01234",
+    "revision": "c82a2b6cf909506e793c",
     "url": "/Breathe-app/static/css/main.d585d8ac.chunk.css"
   },
   {
-    "revision": "500cd4815e2bcdae1729",
-    "url": "/Breathe-app/static/js/2.bac07eb4.chunk.js"
+    "revision": "fb2f53ece856c8fb6951",
+    "url": "/Breathe-app/static/js/2.f5472cda.chunk.js"
   },
   {
     "revision": "283e247fcd70152d45e39e6e5a17cbed",
-    "url": "/Breathe-app/static/js/2.bac07eb4.chunk.js.LICENSE.txt"
+    "url": "/Breathe-app/static/js/2.f5472cda.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7f76bf4ef91a5fa01234",
-    "url": "/Breathe-app/static/js/main.07f04101.chunk.js"
+    "revision": "c82a2b6cf909506e793c",
+    "url": "/Breathe-app/static/js/main.9409d146.chunk.js"
   },
   {
     "revision": "f093678bb22c5af2a636",
@@ -60,8 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Breathe-app/static/media/nose.86bb7cf7.svg"
   },
   {
-    "revision": "5ba1725e73eac5db57a27d76e87f39e6",
-    "url": "/Breathe-app/static/media/pause.5ba1725e.svg"
+    "revision": "6d773645d6c0a7e83a35e07fd42a4e5d",
+    "url": "/Breathe-app/static/media/pause-2.6d773645.svg"
   },
   {
     "revision": "651533e96b07972b5a21617e9a17065d",
@@ -70,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8133933d4166bb5d4ac4bec44bf1ebfd",
     "url": "/Breathe-app/static/media/right-down-arrow.8133933d.svg"
+  },
+  {
+    "revision": "11fb3c18520c735e6c5e55ecaba47d7d",
+    "url": "/Breathe-app/static/media/smiley.11fb3c18.svg"
   },
   {
     "revision": "8a0e3abc08f5720ee6125d6d2d3d36b8",

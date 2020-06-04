@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Breathe-app/static/css/main.d585d8ac.chunk.css",
-    "main.js": "/Breathe-app/static/js/main.07f04101.chunk.js",
-    "main.js.map": "/Breathe-app/static/js/main.07f04101.chunk.js.map",
+    "main.js": "/Breathe-app/static/js/main.9409d146.chunk.js",
+    "main.js.map": "/Breathe-app/static/js/main.9409d146.chunk.js.map",
     "runtime-main.js": "/Breathe-app/static/js/runtime-main.6d67d853.js",
     "runtime-main.js.map": "/Breathe-app/static/js/runtime-main.6d67d853.js.map",
     "static/css/2.de424728.chunk.css": "/Breathe-app/static/css/2.de424728.chunk.css",
-    "static/js/2.bac07eb4.chunk.js": "/Breathe-app/static/js/2.bac07eb4.chunk.js",
-    "static/js/2.bac07eb4.chunk.js.map": "/Breathe-app/static/js/2.bac07eb4.chunk.js.map",
+    "static/js/2.f5472cda.chunk.js": "/Breathe-app/static/js/2.f5472cda.chunk.js",
+    "static/js/2.f5472cda.chunk.js.map": "/Breathe-app/static/js/2.f5472cda.chunk.js.map",
     "index.html": "/Breathe-app/index.html",
-    "precache-manifest.37fffb1bb2881fde1769b125b0d69236.js": "/Breathe-app/precache-manifest.37fffb1bb2881fde1769b125b0d69236.js",
+    "precache-manifest.c1ec71a4e337a8da195891b502bc1a82.js": "/Breathe-app/precache-manifest.c1ec71a4e337a8da195891b502bc1a82.js",
     "service-worker.js": "/Breathe-app/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/Breathe-app/static/css/2.de424728.chunk.css.map",
     "static/css/main.d585d8ac.chunk.css.map": "/Breathe-app/static/css/main.d585d8ac.chunk.css.map",
-    "static/js/2.bac07eb4.chunk.js.LICENSE.txt": "/Breathe-app/static/js/2.bac07eb4.chunk.js.LICENSE.txt",
+    "static/js/2.f5472cda.chunk.js.LICENSE.txt": "/Breathe-app/static/js/2.f5472cda.chunk.js.LICENSE.txt",
     "static/media/Circle.svg": "/Breathe-app/static/media/Circle.0b465ace.svg",
     "static/media/background.svg": "/Breathe-app/static/media/background.d4c9e566.svg",
     "static/media/info.svg": "/Breathe-app/static/media/info.fd40061b.svg",
@@ -22,17 +22,18 @@
     "static/media/logo.svg": "/Breathe-app/static/media/logo.43d6cc86.svg",
     "static/media/menu.svg": "/Breathe-app/static/media/menu.d1a0fc42.svg",
     "static/media/nose.svg": "/Breathe-app/static/media/nose.86bb7cf7.svg",
-    "static/media/pause.svg": "/Breathe-app/static/media/pause.5ba1725e.svg",
+    "static/media/pause-2.svg": "/Breathe-app/static/media/pause-2.6d773645.svg",
     "static/media/right-arrow.svg": "/Breathe-app/static/media/right-arrow.651533e9.svg",
     "static/media/right-down-arrow.svg": "/Breathe-app/static/media/right-down-arrow.8133933d.svg",
+    "static/media/smiley.svg": "/Breathe-app/static/media/smiley.11fb3c18.svg",
     "static/media/test.svg": "/Breathe-app/static/media/test.8a0e3abc.svg",
     "static/media/trening.svg": "/Breathe-app/static/media/trening.9a290468.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6d67d853.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.bac07eb4.chunk.js",
+    "static/js/2.f5472cda.chunk.js",
     "static/css/main.d585d8ac.chunk.css",
-    "static/js/main.07f04101.chunk.js"
+    "static/js/main.9409d146.chunk.js"
   ]
 }
