@@ -16,8 +16,8 @@ const Info = () => {
           md={ 12 }
           lg={ 12 }>
             <motion.div className="container pt-5">
-            <Paragraph>Aplikacja "oddech" bazuje na podstawowej technice jogi - Pranajama. Protokół oddechowy nie wymaga specjalistycznego sprzętu, więc może być wykonywany przez wszystkich seniorów.</Paragraph>
-            <Paragraph>Ćwiczenia należy wykonywać trzykrotnie w ciągu dnia. Wykonanie pojedynczej jednostki treningowej zajmuje 10 minut.</Paragraph>
+            <Paragraph>Aplikacja "oddech" bazuje na podstawowej technice jogi - Pranajama. Protokół oddechowy nie wymaga specjalistycznego sprzętu, może być wykonywany przez szerokie grono seniorów.</Paragraph>
+            <Paragraph>Ćwiczenia należy wykonywać dwukrotnie w ciągu dnia. Wykonanie pojedynczej jednostki treningowej zajmuje 10 minut.</Paragraph>
             <Paragraph>Powodzenia <img src={smiley} alt="smiley"></img> </Paragraph>
             <Link to="/">
               <Button className="mb-5">Wróć do Menu</Button>

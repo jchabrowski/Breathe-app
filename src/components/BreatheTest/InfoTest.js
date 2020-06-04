@@ -18,6 +18,7 @@ export const InfoTest = () => {
           md={ 12 }
           lg={ 12 }>
             <motion.div className="container pt-5"
+              key="info-test"
               initial={{width: "200px", height:"200px"}}
               animate={{
                 scale: [1, 1.5, 0.5]

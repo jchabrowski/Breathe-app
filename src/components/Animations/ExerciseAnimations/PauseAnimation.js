@@ -7,9 +7,9 @@ const PauseAnimation = () => {
   return (
   <React.Fragment>
     <motion.div className="container py-2 d-flex justify-content-center px-0"
+    
       animate={{opacity: [1, 0.8, 1]}}
       transition={{ease: "easeInOut", duration:2, loop: 4}}
-      exit={{opacity: 0}}
       >
       <img src={pause} alt="pause"></img>
     </motion.div>

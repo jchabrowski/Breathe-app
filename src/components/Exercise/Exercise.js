@@ -46,7 +46,7 @@ const Exercise = () => {
       let currentAnimation = <ThankYouAnimation />
       setAnimation(currentAnimation);
       console.log('animation cleared');
-    }, 150000)
+    }, 600000)
   }, []);
 
   
@@ -63,7 +63,9 @@ const Exercise = () => {
               <img src={nose} alt="nose"></img>
             </motion.div>
 
-            {currentAnimation}
+            
+              {currentAnimation}
+            
             
             <Timer  formatValue={(value) => `${(value < 10? `0${value}` : value)}`}
               initialTime={600000}

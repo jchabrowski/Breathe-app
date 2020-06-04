@@ -17,15 +17,16 @@ const Test = () => {
         lg={ 12 }>
         
         <motion.div className="container mb-5"
+          key="breathe-test"
           exit={{opacity: 0}}
           animate={{opacity: 1}}
           initial={{opacity: 0}}>
           <Paragraph>Celem testu jest sprawdzenie jak długo potrafi Pan/i wydmuchiwać powietrze, po uprzednim maksymalnym wdechu.</Paragraph>
-          <Paragraph>Aby przejść dalej proszę nacisnąć przycisk "Rozpocznij".</Paragraph>
-          <ParagraphSmaller>Pojawi się dalsza instrukcja!</ParagraphSmaller>
+          <Paragraph>Aby kontynuować proszę nacisnąć przycisk "Dalej".</Paragraph>
+          <ParagraphSmaller>Pojawi się instrukcja!</ParagraphSmaller>
 
           <Link to="/InfoTest"> 
-            <Button>Rozpocznij</Button>
+            <Button>Dalej</Button>
           </Link>
         </motion.div>
 

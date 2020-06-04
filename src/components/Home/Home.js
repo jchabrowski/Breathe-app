@@ -16,6 +16,7 @@ const Home = () => {
         md={{ span: 6, offset: 3 }}
         lg={{ span: 4, offset: 4 }}>
         <motion.div className=""
+          key="home"
           exit={{opacity: 0}}
           animate={{opacity: 1}}
           initial={{opacity: 0}}>

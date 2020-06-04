@@ -1,7 +1,7 @@
 import React, { useEffect, useState} from 'react';
 import { motion } from 'framer-motion';
 import { Row, Col } from 'react-bootstrap';
-import { Button,  ParagraphSmaller, MainContainer } from '../../styles/Styles';
+import { MainContainer, ParagraphSmaller, Paragraph } from '../../styles/Styles';
 // import { Link } from 'react-router-dom';
 import InhaleAnimation from '../Animations/TestAnimations/InhaleAnimation';
 import ExhaleAnimation from '../Animations/TestAnimations/ExhaleAnimation';
@@ -17,7 +17,7 @@ export const StartTest = () => {
 
   useEffect(() => {
     let currentAnimation= <InhaleAnimation/>
-    setAnimation(currentAnimation)
+    setAnimation(currentAnimation);
 
     setTimeout(() => {
       let currentAnimation = <ExhaleAnimation/>
@@ -25,13 +25,13 @@ export const StartTest = () => {
     }, 3000)
   }, [])
   return (
-    <MainContainer className="d-flex min-vh-100 flex-column justify-content-center px-0">
-      <Row className="mx-auto">
+    <MainContainer className="d-flex min-vh-100 flex-column px-0">
+      <Row className="mx-auto pt-5 mt-4">
         <Col
-          className="text-center my-5 py-4 mx-auto"
+          className="text-center mt-5 pt-4 mx-auto"
           xs={ 12 }
           md={ 12 }
-          lg={ 12 }>
+          lg={{span: 12, offset: 3 }}>
             <motion.div className="container pt-5"
               initial={{width: "200px", height:"200px"}}
               animate={{
@@ -45,9 +45,18 @@ export const StartTest = () => {
                 >
               <img src={Circle} alt="Circle"/>
             </motion.div>
+            </Col>
+            </Row>
 
-            {currentAnimation}
             
+      <Row className="mx-auto">
+        <Col
+        className="text-center mb-5 pb-4 mx-auto"
+          xs={ 12 }
+          md={ 12 }
+          lg={ 12 }>
+        
+        {currentAnimation}
         </Col>
     </Row>
     <Navbar></Navbar>
