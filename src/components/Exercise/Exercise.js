@@ -13,21 +13,16 @@ import RightDownArrowAnimation from '../Animations/ExerciseAnimations/RightDownA
 import PauseAnimation from '../Animations/ExerciseAnimations/PauseAnimation';
 import ThankYouAnimation from '../Animations/ExerciseAnimations/ThankYouAnimation';
 
-
-
-
 const Exercise = () => {
   
   const [currentAnimation, setAnimation] = useState();
 
   useEffect(() => {
-
     let i = 0;
     let animationArray = [<LeftArrowAnimation/>, <PauseAnimation/>, <RightDownArrowAnimation/>, <RightArrowAnimation/>, <LeftDownArrowAnimation/>, <PauseAnimation/> ]
     let currentAnimation = animationArray[i]
     setAnimation(currentAnimation);
 
-    
     const breathingAnimation = () => {
       let currentAnimation = animationArray[i];
       setAnimation(currentAnimation);
@@ -49,8 +44,6 @@ const Exercise = () => {
     }, 600000)
   }, []);
 
-  
-
   return (
     <MainContainer className="d-flex min-vh-100 flex-column justify-content-center px-0">
       <Row className="mx-auto">
@@ -62,11 +55,8 @@ const Exercise = () => {
             <motion.div className="container d-flex justify-content-center">
               <img src={nose} alt="nose"></img>
             </motion.div>
-
-            
               {currentAnimation}
-            
-            
+    
             <Timer  formatValue={(value) => `${(value < 10? `0${value}` : value)}`}
               initialTime={600000}
               direction="backward">
@@ -77,7 +67,7 @@ const Exercise = () => {
                   </React.Fragment>
                 }
             </Timer>
-            
+
             <motion.div className="container pt-3 d-flex justify-content-center">
               <Link to="/">
                 <Button>Wróć do Menu</Button>

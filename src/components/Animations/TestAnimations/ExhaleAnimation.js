@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { Paragraph }  from '../../../styles/Styles';
 import Timer from 'react-compound-timer';
 import { Button, ParagraphSmaller } from '../../../styles/Styles';
+import { pluralize } from 'pluralize';
+
+// const pluralize = require('pluralize');
 
 const ExhaleAnimation = () => {
 
@@ -14,15 +17,13 @@ const ExhaleAnimation = () => {
     setMessage(message);
     }, []);
 
-    let testFunction = () => {
-      let exerciseDoneInfo = <><ParagraphSmaller>Dziękujemy za wykonanie Testu!</ParagraphSmaller><ParagraphSmaller>Pana/i Wynik to xx sekund!</ParagraphSmaller></>
-      let message = exerciseDoneInfo;
+    let stopTimer = () => {
+      let message = <><ParagraphSmaller>Dziękujemy za wykonanie Testu!</ParagraphSmaller><ParagraphSmaller>Pana/i Wynik to <Timer.Seconds /> sekund!</ParagraphSmaller></>
       setMessage(message);
     }
 
-    let maxBreatheFunction = () => {
-      let exerciseDoneInfo = <ParagraphSmaller>Dziękujemy za wykonanie Testu! Udało się Panu/i wydmuchiwać powietrze przez 45 sekund!</ParagraphSmaller>
-      let message = exerciseDoneInfo;
+    let maxBreatheLength = () => {
+      let message = <ParagraphSmaller>Dziękujemy za wykonanie Testu! Udało się Panu/i wydmuchiwać powietrze przez 45 sekund!</ParagraphSmaller>
       setMessage(message);
     } 
   
@@ -38,9 +39,9 @@ const ExhaleAnimation = () => {
         <Timer 
           checkpoints={[
             {time: 45000,
-            callback: () =>  maxBreatheFunction()}
+            callback: () =>  maxBreatheLength()}
           ]}
-          onStop = { () => testFunction()}>
+          onStop = { () => stopTimer()}>
           {({stop}) => (
           <React.Fragment>
                 <motion.div

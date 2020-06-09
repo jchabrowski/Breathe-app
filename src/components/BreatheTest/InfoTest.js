@@ -38,7 +38,6 @@ export const InfoTest = () => {
             <Link to="/StartTest"> 
             <Button>Rozpocznij</Button>
           </Link>
-
         </Col>
     </Row>
     <Navbar></Navbar>

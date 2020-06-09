@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
     "framer-motion": "^1.10.2",
+    "pluralize": "^8.0.0",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0",
     "react-compound-timer": "^1.2.0",
@@ -43,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "prettier": "2.0.5"
   }
 }

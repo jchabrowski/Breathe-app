@@ -15,21 +15,19 @@ const Test = () => {
         xs={ 12 }
         md={ 12 }
         lg={ 12 }>
-        
-        <motion.div className="container mb-5"
-          key="breathe-test"
-          exit={{opacity: 0}}
-          animate={{opacity: 1}}
-          initial={{opacity: 0}}>
-          <Paragraph>Celem testu jest sprawdzenie jak długo potrafi Pan/i wydmuchiwać powietrze, po uprzednim maksymalnym wdechu.</Paragraph>
-          <Paragraph>Aby kontynuować proszę nacisnąć przycisk "Dalej".</Paragraph>
-          <ParagraphSmaller>Pojawi się instrukcja!</ParagraphSmaller>
+          <motion.div className="container mb-5"
+            key="breathe-test"
+            exit={{opacity: 0}}
+            animate={{opacity: 1}}
+            initial={{opacity: 0}}>
+              <Paragraph>Celem testu jest sprawdzenie jak długo potrafi Pan/i wydmuchiwać powietrze, po uprzednim maksymalnym wdechu.</Paragraph>
+              <Paragraph>Aby kontynuować proszę nacisnąć przycisk "Dalej".</Paragraph>
+              <ParagraphSmaller>Pojawi się instrukcja!</ParagraphSmaller>
 
-          <Link to="/InfoTest"> 
-            <Button>Dalej</Button>
-          </Link>
-        </motion.div>
-
+              <Link to="/InfoTest"> 
+                <Button>Dalej</Button>
+              </Link>
+          </motion.div>
       </Col>
     </Row>
   <Navbar></Navbar>

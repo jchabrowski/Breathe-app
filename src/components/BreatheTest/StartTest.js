@@ -1,19 +1,15 @@
 import React, { useEffect, useState} from 'react';
 import { motion } from 'framer-motion';
 import { Row, Col } from 'react-bootstrap';
-import { MainContainer, ParagraphSmaller, Paragraph } from '../../styles/Styles';
-// import { Link } from 'react-router-dom';
+import { MainContainer } from '../../styles/Styles';
 import InhaleAnimation from '../Animations/TestAnimations/InhaleAnimation';
 import ExhaleAnimation from '../Animations/TestAnimations/ExhaleAnimation';
 import Circle from '../../assets/images/Circle.svg'
 import Navbar from '../Navbar/Navbar';
 
-
-
 export const StartTest = () => {
 
   const [currentAnimation, setAnimation] = useState();
-
 
   useEffect(() => {
     let currentAnimation= <InhaleAnimation/>
@@ -50,13 +46,11 @@ export const StartTest = () => {
 
             
       <Row className="mx-auto">
-        <Col
-        className="text-center mb-5 pb-4 mx-auto"
+        <Col  className="text-center mb-5 pb-4 mx-auto"
           xs={ 12 }
           md={ 12 }
           lg={ 12 }>
-        
-        {currentAnimation}
+            {currentAnimation}
         </Col>
     </Row>
     <Navbar></Navbar>
