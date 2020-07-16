@@ -1,8 +1,9 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useContext } from 'react';
 import { motion } from 'framer-motion';
 import { Paragraph }  from '../../../styles/Styles';
 import Timer from 'react-compound-timer';
 import { Button, ParagraphSmaller } from '../../../styles/Styles';
+import CircleContext from './CircleContext';
 
 const ExhaleAnimation = () => {
   
@@ -10,6 +11,7 @@ const ExhaleAnimation = () => {
 
   const [message, setMessage] = useState();
   const [isTimerOn, setTimer] = useState();
+  const {circle, setCircle} = useContext(CircleContext);
 
   useEffect(() => {
     let safetyInfo = <ParagraphSmaller>Jeżeli poczuje się Pan/i słabo należy przerwać próbę.</ParagraphSmaller>;
@@ -25,6 +27,7 @@ const ExhaleAnimation = () => {
       setMessage(message);
       let isTimerOn = false;
       setTimer(isTimerOn);
+      setCircle(false);
     }
 
     let maxBreatheLength = () => {
@@ -33,15 +36,18 @@ const ExhaleAnimation = () => {
       let isTimerOn = false;
       setTimer(isTimerOn);
       timerEl.current.pause();
+      setCircle(false);
     } 
   
   return (
     <React.Fragment>
-      <motion.div 
-        animate={{opacity: [0, 0.4, 1]}}
-        transition={{ ease: "easeIn", duration: 45, times: [0, 0.1, 1]}}>
-          <Paragraph>Wydech...</Paragraph>
-      </motion.div>
+      {circle?
+        <motion.div 
+          animate={{opacity: [0, 0.4, 1]}}
+          transition={{ ease: "easeIn", duration: 45, times: [0, 0.1, 1]}}>
+            <Paragraph>Wydech...</Paragraph>
+        </motion.div>
+      : null }
         <Timer
           ref={timerEl} 
           checkpoints={[
