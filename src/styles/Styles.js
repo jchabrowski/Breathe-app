@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 import background from '../assets/images/background.svg';
 import { Container } from 'react-bootstrap';
-// import backgroundShort from '../assets/images/background-short.svg'
-
-  // export const LogoContainer = styled.div`
-    
-  // `
 
   export const MainContainer = styled(Container)`
   max-width: 500px;
@@ -24,6 +19,10 @@ import { Container } from 'react-bootstrap';
     min-width: 500px;
     max-width: 500px;
   `;
+
+  export const EmptyContainer = styled.div`
+    
+  `
   
   export const CenterContainer = styled.div`
     padding-top: 3rem;
@@ -33,7 +32,6 @@ import { Container } from 'react-bootstrap';
   position: absolute;
   bottom: 100px;
   `
-
 
   export const BoxLogo = styled.div`
     

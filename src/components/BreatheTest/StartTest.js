@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { MainContainer } from '../../styles/Styles';
+import { MainContainer, EmptyContainer } from '../../styles/Styles';
 import CircleAnimation from '../Animations/TestAnimations/CircleAnimation';
 import BreatheAnimation from '../Animations/TestAnimations/BreatheAnimation';
 import Navbar from '../Navbar/Navbar';
@@ -21,7 +21,7 @@ export const StartTest = () => {
             lg={{span: 12, offset: 3 }}>
               {circle?
                 <CircleAnimation />
-                : null }
+                : <EmptyContainer className="container pt-5 h-100" /> }
               <BreatheAnimation />
             </Col>
           </Row>
