@@ -15,29 +15,29 @@ const Home = () => {
         xs={ 12 }
         md={{ span: 6, offset: 3 }}
         lg={{ span: 4, offset: 4 }}>
-        <motion.div className=""
-          key="home"
-          exit={{opacity: 0}}
-          animate={{opacity: 1}}
-          initial={{opacity: 0}}>
-          <BoxLogo>
-            <img src={logo} alt="logo"></img>
-          </BoxLogo>
-        </motion.div>
+          <motion.div className=""
+            key="home"
+            exit={{opacity: 0}}
+            animate={{opacity: 1}}
+            initial={{opacity: 0}}>
+            <BoxLogo>
+              <img src={logo} alt="logo"></img>
+            </BoxLogo>
+          </motion.div>
         
-        <Buttons className="d-flex flex-column justify-content-center align-items-center mt-5">
-          <Link to="/BreatheTest">
-            <Button>Test</Button>
-          </Link>
+          <Buttons className="d-flex flex-column justify-content-center align-items-center mt-5">
+            <Link to="/BreatheTest">
+              <Button>Test</Button>
+            </Link>
 
-          <Link to="/Exercise">
-            <Button>Twoje ćwiczenia</Button>
-          </Link>
-          
-          <Link to ="/Info">
-            <Button>Informacje</Button>
-          </Link>
-        </Buttons> 
+            <Link to="/Exercise">
+              <Button>Twoje ćwiczenia</Button>
+            </Link>
+            
+            <Link to ="/Info">
+              <Button>Informacje</Button>
+            </Link>
+          </Buttons> 
       </Col>
     </Row>
   </MainContainer>

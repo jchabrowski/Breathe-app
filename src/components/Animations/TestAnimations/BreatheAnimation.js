@@ -10,10 +10,12 @@ const BreatheAnimation = () => {
     let currentAnimation= <InhaleAnimation/>
     setAnimation(currentAnimation);
 
+    const ANIMATION_CHANGE_TIME = 3000;
+    
     setTimeout(() => {
       let currentAnimation = <ExhaleAnimation/>
       setAnimation(currentAnimation)
-    }, 3000)
+    }, ANIMATION_CHANGE_TIME)
   }, [])
   
   return (

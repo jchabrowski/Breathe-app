@@ -6,7 +6,7 @@ import InfoTest from './components/BreatheTest/InfoTest';
 import StartTest from './components/BreatheTest/StartTest';
 import Exercise from './components/Exercise/Exercise';
 import Info from './components/Info/Info';
-import {  HashRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import './App.css';

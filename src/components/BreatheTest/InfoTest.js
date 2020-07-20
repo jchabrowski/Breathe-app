@@ -11,7 +11,7 @@ import Navbar from '../Navbar/Navbar';
 export const InfoTest = () => {
   return (
     <MainContainer className="d-flex min-vh-100 flex-column justify-content-center px-0">
-      <Row className="mx-auto">
+      <Row className="mx-auto my-auto">
         <Col
           className="text-center my-5 py-4 mx-auto"
           xs={ 12 }

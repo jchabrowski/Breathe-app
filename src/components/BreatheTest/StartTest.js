@@ -18,7 +18,7 @@ export const StartTest = () => {
             className="text-center mt-5 pt-4 mx-auto"
             xs={ 12 }
             md={ 12 }
-            lg={{span: 12, offset: 3 }}>
+            lg={{span: 12, offset: 3}}>
               {circle?
                 <CircleAnimation />
                 : <EmptyContainer className="container pt-5 h-100" /> }

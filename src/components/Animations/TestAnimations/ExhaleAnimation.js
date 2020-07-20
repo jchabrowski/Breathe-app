@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef, useContext } from 'react';
 import { motion } from 'framer-motion';
 import { Paragraph }  from '../../../styles/Styles';
 import Timer from 'react-compound-timer';
-import { Button, ParagraphSmaller } from '../../../styles/Styles';
+import { Button, ParagraphSmaller} from '../../../styles/Styles';
 import CircleContext from './CircleContext';
 
 const ExhaleAnimation = () => {
@@ -31,7 +31,7 @@ const ExhaleAnimation = () => {
     }
 
     let maxBreatheLength = () => {
-      let message = <ParagraphSmaller>Dziękujemy za wykonanie Testu! Udało się Panu/i wydmuchiwać powietrze przez 45 sekund!</ParagraphSmaller>
+      let message = <ParagraphSmaller>Dziękujemy za wykonanie Testu! Udało się Panu/i wydmuchiwać powietrze przez 45 sekund!</ParagraphSmaller>;
       setMessage(message);
       let isTimerOn = false;
       setTimer(isTimerOn);
@@ -69,7 +69,7 @@ const ExhaleAnimation = () => {
 
                   <motion.div
                     animate={{opacity: [0, 1]}}
-                    transition={{ease: "easeIn", duration: 2, delay: 2}}>    
+                    transition={{ease: "easeInOut", duration: 2, delay: 2}}>    
                     {message ? message : null}
                   </motion.div>
           </React.Fragment>

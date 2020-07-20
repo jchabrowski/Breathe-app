@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import background from '../assets/images/background.svg';
 import { Container } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 
   export const MainContainer = styled(Container)`
   max-width: 500px;
@@ -22,7 +23,7 @@ import { Container } from 'react-bootstrap';
 
   export const EmptyContainer = styled.div`
     
-  `
+  `;
   
   export const CenterContainer = styled.div`
     padding-top: 3rem;
@@ -31,7 +32,12 @@ import { Container } from 'react-bootstrap';
   export const BottomContainer = styled.div`
   position: absolute;
   bottom: 100px;
-  `
+  `;
+
+  export const EaseInOutContainer = styled(motion.div)`
+    animate={{opacity: [0, 1]}};
+    transition={{ease: "easeInOut", duration: 1}};
+  `;
 
   export const BoxLogo = styled.div`
     

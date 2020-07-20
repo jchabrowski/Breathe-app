@@ -21,7 +21,6 @@ const LeftDownArrowAnimation = () => {
   return (
     <React.Fragment>
       <motion.div className="container py-2 d-flex justify-content-start px-0"
-      
         animate={{x:[0, -10, 0],  y:[0, 10, 0]}}
         transition={{ease: "easeInOut", duration:2, loop: 4}}
         initial={{opacity: 1}}

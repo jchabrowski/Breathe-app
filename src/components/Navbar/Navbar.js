@@ -20,32 +20,31 @@ const linkStyle = {
 const Navbar = () => {
   return (
     <motion.div>
+      <nav className="navbar navbar-dark bg-dark justify-content-around pt-1 mt-3" style={navStyle}>
+        <Link className="nav-link" to="/" style={linkStyle}>
+          <div>
+            <img src={menu} alt="menu"></img>
+          </div>
+        </Link>
+        
+        <Link className="nav-link" to="/BreatheTest" style={linkStyle}>
+          <div>
+            <img src={test} alt="test"></img>
+          </div>
+        </Link>
 
-    <nav className="navbar navbar-dark bg-dark justify-content-around mt-3" style={navStyle}>
-      <Link className="nav-link" to="/" style={linkStyle}>
-        <div>
-          <img src={menu} alt="menu"></img>
-        </div>
-      </Link>
-      
-      <Link className="nav-link" to="/BreatheTest" style={linkStyle}>
-        <div>
-          <img src={test} alt="test"></img>
-        </div>
-      </Link>
+        <Link className="nav-link" to="/Exercise" style={linkStyle}>
+          <div>
+            <img src={trening} alt="trening"></img>
+          </div>
+        </Link>
 
-      <Link className="nav-link" to="/Exercise" style={linkStyle}>
-        <div>
-          <img src={trening} alt="trening"></img>
-        </div>
-      </Link>
-
-      <Link className="nav-link" to="/Info" style={linkStyle}>
-        <div>
-          <img src={info} alt="info"></img>
-        </div>
-      </Link>
-    </nav>
+        <Link className="nav-link" to="/Info" style={linkStyle}>
+          <div>
+            <img src={info} alt="info"></img>
+          </div>
+        </Link>
+      </nav>
     </motion.div>
   )
 };
