@@ -65,6 +65,9 @@ import { motion } from 'framer-motion';
     &:focus {
       outline: 0;
     };
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
   `;
 
   export const InvertedButton = styled.button`
@@ -84,12 +87,18 @@ import { motion } from 'framer-motion';
     &:focus {
       outline: 0;
     };
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
   `;
 
   export const Paragraph = styled.p`
     font-size: 1.3rem;
     font-weight: regular;
     color: #216353;
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
   `;
 
   export const OneLineParagraph = styled.p`
@@ -97,16 +106,27 @@ import { motion } from 'framer-motion';
     font-weight: regular;
     color: #216353;
     max-width: 500px;
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
   `
   export const ParagraphSmaller = styled.p`
     font-size: 1.1rem;
     font-weight: regular;
     // color: #a0ddce;
     color: #216353;
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+    }
     `;
 
   export const ParagraphMuted = styled.p`
     font-size: 1.2rem;
     font-weight: regular;
     color: #78CFBA;
-  `
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+    }
+  `;
+
+  
