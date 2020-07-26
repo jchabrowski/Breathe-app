@@ -8,13 +8,13 @@ import { useTranslation } from 'react-i18next';
 
 const ExhaleAnimation = () => {
 
+  const { t } = useTranslation();
   
   const timerEl = useRef(null);
   
   const [message, setMessage] = useState();
   const [isTimerOn, setTimer] = useState();
   const {circle, setCircle} = useContext(CircleContext);
-  const { t } = useTranslation();
   
   useEffect(() => {
     let safetyInfo = <ParagraphSmaller>Jeżeli poczuje się Pan/i słabo należy przerwać próbę.</ParagraphSmaller>;
@@ -26,7 +26,7 @@ const ExhaleAnimation = () => {
   
   
   let stopTimer = () => {
-      let message = <><ParagraphSmaller>Dziękujemy za wykonanie Testu!</ParagraphSmaller><ParagraphSmaller>Pana/i Wynik to <Timer.Seconds /> {t("TIME.SECONDS", { count: <Timer.Seconds /> })}</ParagraphSmaller></>
+      let message = <><ParagraphSmaller>Dziękujemy za wykonanie Testu!</ParagraphSmaller><ParagraphSmaller>Pana/i Wynik to <Timer.Seconds /> {t("TIME.SECONDS", { count: <Timer.Seconds/>})}</ParagraphSmaller></>
       setMessage(message);
       let isTimerOn = false;
       setTimer(isTimerOn);
