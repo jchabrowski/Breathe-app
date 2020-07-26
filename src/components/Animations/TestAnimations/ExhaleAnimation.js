@@ -4,26 +4,30 @@ import { Paragraph }  from '../../../styles/Styles';
 import Timer from 'react-compound-timer';
 import { Button, ParagraphSmaller} from '../../../styles/Styles';
 import CircleContext from './CircleContext';
+import { useTranslation } from 'react-i18next';
 
 const ExhaleAnimation = () => {
+
   
   const timerEl = useRef(null);
-
+  
   const [message, setMessage] = useState();
   const [isTimerOn, setTimer] = useState();
   const {circle, setCircle} = useContext(CircleContext);
-
+  const { t } = useTranslation();
+  
   useEffect(() => {
     let safetyInfo = <ParagraphSmaller>Jeżeli poczuje się Pan/i słabo należy przerwać próbę.</ParagraphSmaller>;
     let message = safetyInfo;
     setMessage(message);
     let isTimerOn = true;
     setTimer(isTimerOn)
-    }, []);
+  }, []);
   
-
-    let stopTimer = () => {
-      let message = <><ParagraphSmaller>Dziękujemy za wykonanie Testu!</ParagraphSmaller><ParagraphSmaller>Pana/i Wynik to <Timer.Seconds /> sekund!</ParagraphSmaller></>
+  
+  let stopTimer = () => {
+      let message = <><ParagraphSmaller>Dziękujemy za wykonanie Testu!</ParagraphSmaller><ParagraphSmaller>Pana/i Wynik to {<Timer.Seconds />} 
+      {t("TIME.SECONDS", { count: 1 })}</ParagraphSmaller></>
       setMessage(message);
       let isTimerOn = false;
       setTimer(isTimerOn);

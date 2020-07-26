@@ -113,7 +113,6 @@ import { motion } from 'framer-motion';
   export const ParagraphSmaller = styled.p`
     font-size: 1.1rem;
     font-weight: regular;
-    // color: #a0ddce;
     color: #216353;
     @media (max-width: 768px) {
       font-size: 0.8rem;

@@ -1,0 +1,14 @@
+{
+  "pl": {
+    "translation": {
+      "MAIN_MENU": {
+        "INFO_BUTTON": "Informacje"
+      },
+      "TIME": {
+        "SECONDS_0": "sekunda",
+        "SECONDS_1": "sekundy",
+        "SECONDS_2": "sekund"
+      }
+    }
+  }
+}

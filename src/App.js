@@ -15,12 +15,12 @@ function App() {
   return (
   <HashRouter>
     <AnimatePresence>
-        <Route exact path="/" component={Home} key="home"/>
-        <Route path="/BreatheTest" component={BreatheTest} key="breatheTest" />
-        <Route path="/InfoTest" component={InfoTest} key="infoTest"/>
-        <Route path="/Exercise" component={Exercise} key="exercise"/>    
-        <Route path="/Info" component={Info} key="info"/>
-        <Route path="/StartTest" component={StartTest}  key="startTest"/>
+        <Route exact path="/" component={Home} />
+        <Route path="/BreatheTest" component={BreatheTest}  />
+        <Route path="/InfoTest" component={InfoTest} />
+        <Route path="/Exercise" component={Exercise} />    
+        <Route path="/Info" component={Info} />
+        <Route path="/StartTest" component={StartTest} />
     </AnimatePresence>
   </HashRouter>
   );

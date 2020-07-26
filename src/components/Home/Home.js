@@ -5,8 +5,8 @@ import { BoxLogo, Button, Buttons, MainContainer } from '../../styles/Styles';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-
 const Home = () => {
+
   return (
   <MainContainer className="d-flex min-vh-100 flex-column justify-content-center">
     <Row>
