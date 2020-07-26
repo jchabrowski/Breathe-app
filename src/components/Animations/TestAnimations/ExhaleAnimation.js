@@ -26,7 +26,7 @@ const ExhaleAnimation = () => {
   
   
   let stopTimer = () => {
-      let message = <><ParagraphSmaller>Dziękujemy za wykonanie Testu!</ParagraphSmaller><ParagraphSmaller>Pana/i Wynik to <Timer.Seconds /> {t("TIME.SECONDS", { count: <Timer.Seconds/>})}</ParagraphSmaller></>
+      let message = <><ParagraphSmaller>Dziękujemy za wykonanie Testu!</ParagraphSmaller><ParagraphSmaller>Pana/i Wynik to <Timer.Seconds /> {t("TIME.SECONDS", { count: timerEl.current.state.s})}</ParagraphSmaller></>
       setMessage(message);
       let isTimerOn = false;
       setTimer(isTimerOn);
