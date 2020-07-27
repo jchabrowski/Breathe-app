@@ -7,10 +7,10 @@
         "INFO_BUTTON": "Information"
       },
       "BREATHE_TEST": {
-        "PARAGRAPH_1": "Celem testu jest sprawdzenie jak długo potrafi Pan/i wydmuchiwać powietrze, po uprzednim maksymalnym wdechu.",
-        "PARAGRAPH_2": "Aby kontynuować proszę nacisnąć przycisk \"Dalej\".",
-        "PARAGRAPH_3": "Pojawi się instrukcja!",
-        "PROCEED_BUTTON": "Proceed"
+        "PARAGRAPH_1": "The goal of the test is to evaluate your exhalation ability, after previous maximal inhalation.",
+        "PARAGRAPH_2": "Please click \"Continue\" to proceed.",
+        "PARAGRAPH_3": "Additional instruction will appear!",
+        "PROCEED_BUTTON": "Continue"
       },
       "INFO_TEST": {
         "PARAGRAPH_1": "W ciągu 3 sekund, podczas gdy okrąg będzie rósł, należy wciągnąć nosem jak najwięcej powietrza.",
