@@ -4,7 +4,7 @@ import { MainContainer, Button, Paragraph} from '../../styles/Styles';
 import { Link  } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';
-// import smiley from '../../assets/images/smiley.svg';
+import { useTranslation } from 'react-i18next';
 
 const Smiley = () => {
   return (
@@ -18,6 +18,8 @@ const Smiley = () => {
 
 const Info = () => {
 
+  const { t } = useTranslation();
+
   return (
     <MainContainer className="d-flex min-vh-100 flex-column justify-content-center px-0">
       <Row className="mx-auto">
@@ -27,12 +29,12 @@ const Info = () => {
           md={ 12 }
           lg={ 12 }>
             <motion.div className="container pt-5">
-            <Paragraph>Aplikacja "oddech" bazuje na podstawowej technice jogi - Pranajama. Protokół oddechowy nie wymaga specjalistycznego sprzętu, może być wykonywany przez szerokie grono seniorów.</Paragraph>
-            <Paragraph>Ćwiczenia należy wykonywać dwukrotnie w ciągu dnia. Wykonanie pojedynczej jednostki treningowej zajmuje 10 minut.</Paragraph>
-            <Paragraph>Powodzenia <Smiley /> </Paragraph>
-            <Link to="/">
-              <Button className="mb-5">Wróć do Menu</Button>
-            </Link>
+              <Paragraph>{t("INFO.PARAGRAPH_1")}</Paragraph>
+              <Paragraph>{t("INFO.PARAGRAPH_2")}</Paragraph>
+              <Paragraph>{t("INFO.GOODLUCK")}<Smiley /> </Paragraph>
+              <Link to="/">
+                <Button className="mb-5">{t("INFO.MENU_BUTTON")}</Button>
+              </Link>
             </motion.div>
         </Col>
     </Row>

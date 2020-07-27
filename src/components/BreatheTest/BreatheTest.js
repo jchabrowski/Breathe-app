@@ -4,8 +4,11 @@ import { MainContainer, Button, Paragraph, ParagraphSmaller } from '../../styles
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Test = () => {
+
+  const { t } = useTranslation();
 
   return (
     <MainContainer className="d-flex min-vh-100 flex-column justify-content-center px-0">
@@ -20,12 +23,12 @@ const Test = () => {
             exit={{opacity: 0}}
             animate={{opacity: 1}}
             initial={{opacity: 0}}>
-              <Paragraph>Celem testu jest sprawdzenie jak długo potrafi Pan/i wydmuchiwać powietrze, po uprzednim maksymalnym wdechu.</Paragraph>
-              <Paragraph>Aby kontynuować proszę nacisnąć przycisk "Dalej".</Paragraph>
-              <ParagraphSmaller>Pojawi się instrukcja!</ParagraphSmaller>
+              <Paragraph>{t("BREATHE_TEST.PARAGRAPH_1")}</Paragraph>
+              <Paragraph>{t("BREATHE_TEST.PARAGRAPH_2")}</Paragraph>
+              <ParagraphSmaller>{t("BREATHE_TEST.PARAGRAPH_3")}</ParagraphSmaller>
 
               <Link to="/InfoTest"> 
-                <Button>Dalej</Button>
+                <Button>{t("BREATHE_TEST.PROCEED_BUTTON")}</Button>
               </Link>
           </motion.div>
       </Col>

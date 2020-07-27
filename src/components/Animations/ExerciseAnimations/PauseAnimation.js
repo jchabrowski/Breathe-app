@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Paragraph } from '../../../styles/Styles';
+import { useTranslation } from 'react-i18next';
 
 const PauseImage = () => {
   return (
@@ -13,6 +14,9 @@ const PauseImage = () => {
 }
 
 const PauseAnimation = () => {
+
+  const { t } = useTranslation();
+  
   return (
   <React.Fragment>
     <motion.div className="container py-2 d-flex justify-content-center px-0"
@@ -26,7 +30,7 @@ const PauseAnimation = () => {
       animate={{opacity: [1, 0.4, 1]}}
       transition={{ease: "easeInOut", duration:2, loop: 4}}
       >
-      <Paragraph>Wstrzymaj..</Paragraph>
+      <Paragraph>{t("ANIMATIONS.HOLD")}</Paragraph>
     </motion.div>
   </React.Fragment>
   );

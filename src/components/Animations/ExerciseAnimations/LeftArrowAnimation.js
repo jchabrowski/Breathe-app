@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Paragraph }  from '../../../styles/Styles';
+import { useTranslation } from 'react-i18next';
 
 const LeftArrowImage = () => {
   return (
@@ -18,6 +19,9 @@ const LeftArrowImage = () => {
 }
 
 const LeftArrowAnimation = () => {
+
+  const { t } = useTranslation();
+  
   return (
     <React.Fragment>
       <motion.div className="container py-2 d-flex justify-content-start px-0"
@@ -33,7 +37,7 @@ const LeftArrowAnimation = () => {
         animate={{opacity: [1, 0.4, 1]}}
         transition={{ease: "easeInOut", duration:2, loop: 4}}
         >
-        <Paragraph>Wdech...</Paragraph>
+        <Paragraph>{t("ANIMATIONS.INHALE")}</Paragraph>
       </motion.div>
     </React.Fragment>
   );

@@ -17,7 +17,7 @@ const ExhaleAnimation = () => {
   const {circle, setCircle} = useContext(CircleContext);
   
   useEffect(() => {
-    let safetyInfo = <ParagraphSmaller>Jeżeli poczuje się Pan/i słabo należy przerwać próbę.</ParagraphSmaller>;
+    let safetyInfo = <ParagraphSmaller>{t("START_TEST.SAFETY_INFO")}</ParagraphSmaller>;
     let message = safetyInfo;
     setMessage(message);
     let isTimerOn = true;
@@ -26,7 +26,7 @@ const ExhaleAnimation = () => {
   
   
   let stopTimer = () => {
-      let message = <><ParagraphSmaller>Dziękujemy za wykonanie Testu!</ParagraphSmaller><ParagraphSmaller>Pana/i Wynik to <Timer.Seconds /> {t("TIME.SECONDS", { count: timerEl.current.state.s})}</ParagraphSmaller></>
+    let message = <><ParagraphSmaller>{t("START_TEST.AFTER_THANK_YOU")}</ParagraphSmaller><ParagraphSmaller>{t("START_TEST.AFTER_SCORE")}<Timer.Seconds /> {t("TIME.SECONDS", { count: timerEl.current.state.s})}</ParagraphSmaller></>
       setMessage(message);
       let isTimerOn = false;
       setTimer(isTimerOn);
@@ -34,7 +34,7 @@ const ExhaleAnimation = () => {
     }
 
     let maxBreatheLength = () => {
-      let message = <ParagraphSmaller>Dziękujemy za wykonanie Testu! Udało się Panu/i wydmuchiwać powietrze przez 45 sekund!</ParagraphSmaller>;
+      let message = <ParagraphSmaller>{t("START_TEST.AFTER_MAX_EXHALE")}</ParagraphSmaller>;
       setMessage(message);
       let isTimerOn = false;
       setTimer(isTimerOn);
@@ -48,7 +48,7 @@ const ExhaleAnimation = () => {
         <motion.div 
           animate={{opacity: [0, 0.4, 1]}}
           transition={{ ease: "easeIn", duration: 45, times: [0, 0.1, 1]}}>
-            <Paragraph>Wydech...</Paragraph>
+            <Paragraph>{t("ANIMATIONS.EXHALE")}</Paragraph>
         </motion.div>
       : null }
         <Timer
@@ -67,7 +67,7 @@ const ExhaleAnimation = () => {
                     <Timer.Seconds /> 
                   : null} 
                     <br></br>
-                    <Button onClick={stop}>Stop</Button>
+                    <Button onClick={stop}>{t("BUTTONS.STOP")}</Button>
                   </motion.div>
 
                   <motion.div

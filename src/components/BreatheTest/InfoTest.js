@@ -5,10 +5,12 @@ import { Button,  Paragraph, ParagraphSmaller, MainContainer } from '../../style
 import { Link } from 'react-router-dom';
 import Circle from '../../assets/images/Circle.svg'
 import Navbar from '../Navbar/Navbar';
-
-
+import { useTranslation } from 'react-i18next';
 
 export const InfoTest = () => {
+
+  const { t } = useTranslation();
+
   return (
     <MainContainer className="d-flex min-vh-100 flex-column justify-content-center px-0">
       <Row className="mx-auto my-auto">
@@ -31,12 +33,12 @@ export const InfoTest = () => {
                 >
               <img src={Circle} alt="Circle"/>
             </motion.div>
-            <Paragraph>W ciągu 3 sekund, podczas gdy okrąg będzie rósł, należy wciągnąć nosem jak najwięcej powietrza. </Paragraph>
-            <Paragraph>Następnie okrąg zacznie się zmniejszać. W tym czasie proszę postarać się jak najdłużej wydmuchiwać powietrze ustami. W momencie w którym skończy Pan/i wydech należy nacisnąć przycisk stop.</Paragraph>
-            <ParagraphSmaller>Jeżeli poczuje się Pan/i słabo należy przerwać próbę.</ParagraphSmaller>
+            <Paragraph>{t("INFO_TEST.PARAGRAPH_1")}</Paragraph>
+            <Paragraph>{t("INFO_TEST.PARAGRAPH_2")}</Paragraph>
+            <ParagraphSmaller>{t("INFO_TEST.PARAGRAPH_3")}</ParagraphSmaller>
 
             <Link to="/StartTest"> 
-            <Button>Rozpocznij</Button>
+            <Button>{t("INFO_TEST.START_BUTTON")}</Button>
           </Link>
         </Col>
     </Row>

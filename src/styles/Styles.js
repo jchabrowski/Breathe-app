@@ -4,9 +4,9 @@ import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 
   export const MainContainer = styled(Container)`
-  max-width: 500px;
-  background: rgb(120,207,186);
-  background: linear-gradient(0deg, rgba(120, 207, 186, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    max-width: 500px;
+    background: rgb(120,207,186);
+    background: linear-gradient(0deg, rgba(120, 207, 186, 1) 0%, rgba(255, 255, 255, 1) 100%);
   `;
 
   export const SecondaryContainer = styled.div`
@@ -30,8 +30,8 @@ import { motion } from 'framer-motion';
   `;
 
   export const BottomContainer = styled.div`
-  position: absolute;
-  bottom: 100px;
+    position: absolute;
+    bottom: 100px;
   `;
 
   export const EaseInOutContainer = styled(motion.div)`
@@ -92,6 +92,17 @@ import { motion } from 'framer-motion';
     }
   `;
 
+  // export const TimerParagraph = styled.p`
+  //   font-size: 1rem;
+  //   font-weight: regular;
+  //   padding: 0.8rem;
+  //   margin: auto;
+  //   color: red;
+  //   @media (max-width: 768px) {
+  //     font-size: 0.9rem;
+  //   }
+  // `
+
   export const Paragraph = styled.p`
     font-size: 1.3rem;
     font-weight: regular;
@@ -128,4 +139,3 @@ import { motion } from 'framer-motion';
     }
   `;
 
-  

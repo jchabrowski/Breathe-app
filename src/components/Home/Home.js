@@ -4,8 +4,11 @@ import logo from '../../assets/images/logo.svg'
 import { BoxLogo, Button, Buttons, MainContainer } from '../../styles/Styles';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  
+  const { t } = useTranslation();
 
   return (
   <MainContainer className="d-flex min-vh-100 flex-column justify-content-center">
@@ -27,15 +30,15 @@ const Home = () => {
         
           <Buttons className="d-flex flex-column justify-content-center align-items-center mt-5">
             <Link to="/BreatheTest">
-              <Button>Test</Button>
+              <Button>{t("MAIN_MENU.TEST_BUTTON")}</Button>
             </Link>
 
             <Link to="/Exercise">
-              <Button>Twoje ćwiczenia</Button>
+              <Button>{t("MAIN_MENU.EXERCISE_BUTTON")}</Button>
             </Link>
             
             <Link to ="/Info">
-              <Button>Informacje</Button>
+              <Button>{t("MAIN_MENU.INFO_BUTTON")}</Button>
             </Link>
           </Buttons> 
       </Col>

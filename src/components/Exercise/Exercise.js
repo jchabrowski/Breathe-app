@@ -12,8 +12,11 @@ import LeftDownArrowAnimation from '../Animations/ExerciseAnimations/LeftDownArr
 import RightDownArrowAnimation from '../Animations/ExerciseAnimations/RightDownArrowAnimation';
 import PauseAnimation from '../Animations/ExerciseAnimations/PauseAnimation';
 import ThankYouAnimation from '../Animations/ExerciseAnimations/ThankYouAnimation';
+import { useTranslation } from 'react-i18next';
 
 const Exercise = () => {
+
+  const { t } = useTranslation();
   
   const [currentAnimation, setAnimation] = useState();
 
@@ -40,7 +43,6 @@ const Exercise = () => {
       clearInterval(animationInterval);
       let currentAnimation = <ThankYouAnimation />
       setAnimation(currentAnimation);
-      console.log('animation cleared');
     }, 600000)
   }, []);
 
@@ -70,7 +72,7 @@ const Exercise = () => {
 
             <motion.div className="container pt-3 d-flex justify-content-center">
               <Link to="/">
-                <Button>Wróć do Menu</Button>
+                <Button>{t("EXERCISE.MENU_BUTTON")}</Button>
               </Link>
             </motion.div>
         </Col>

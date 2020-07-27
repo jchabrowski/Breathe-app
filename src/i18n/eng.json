@@ -1,16 +1,16 @@
 {
-  "pl": {
+  "eng": {
     "translation": {
       "MAIN_MENU": {
         "TEST_BUTTON": "Test",
-        "EXERCISE_BUTTON": "Twoje ćwiczenia",
-        "INFO_BUTTON": "Informacje"
+        "EXERCISE_BUTTON": "Your Exercises",
+        "INFO_BUTTON": "Information"
       },
       "BREATHE_TEST": {
         "PARAGRAPH_1": "Celem testu jest sprawdzenie jak długo potrafi Pan/i wydmuchiwać powietrze, po uprzednim maksymalnym wdechu.",
         "PARAGRAPH_2": "Aby kontynuować proszę nacisnąć przycisk \"Dalej\".",
         "PARAGRAPH_3": "Pojawi się instrukcja!",
-        "PROCEED_BUTTON": "Dalej"
+        "PROCEED_BUTTON": "Proceed"
       },
       "INFO_TEST": {
         "PARAGRAPH_1": "W ciągu 3 sekund, podczas gdy okrąg będzie rósł, należy wciągnąć nosem jak najwięcej powietrza.",
@@ -25,19 +25,19 @@
         "AFTER_MAX_EXHALE": "Dziękujemy za wykonanie Testu! Udało się Panu/i wydmuchiwać powietrze przez 45 sekund!"
       },
       "EXERCISE": {
-        "MENU_BUTTON": "Wróć do Menu"
+        "MENU_BUTTON": "Back to Menu"
       },
       "INFO": {
         "PARAGRAPH_1": "Aplikacja \"oddech\" bazuje na podstawowej technice jogi - Pranajama. Protokół oddechowy nie wymaga specjalistycznego sprzętu, może być wykonywany przez szerokie grono seniorów.",
         "PARAGRAPH_2": "Ćwiczenia należy wykonywać dwukrotnie w ciągu dnia. Wykonanie pojedynczej jednostki treningowej zajmuje 10 minut.",
         "GOODLUCK": "Powodzenia",
-        "MENU_BUTTON": "Wróć do Menu"
+        "MENU_BUTTON": "Back to Menu"
       },
       "ANIMATIONS": {
-        "INHALE": "Wdech...",
-        "EXHALE": "Wydech...",
-        "HOLD": "Wstrzymaj...",
-        "THANK_YOU_MESSAGE": "Ćwiczenia zakończone!"
+        "INHALE": "Inhale...",
+        "EXHALE": "Exhale...",
+        "HOLD": "Hold...",
+        "THANK_YOU_MESSAGE": "That's it!"
       },
       "BUTTONS": {
         "STOP": "Stop"
