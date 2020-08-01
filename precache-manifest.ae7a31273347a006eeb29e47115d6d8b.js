@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c6d23230ffbc7b706dd79b62253203c8",
+    "revision": "08753f94b0bdd592e42d9a1354b72fe7",
     "url": "/Breathe-app/index.html"
   },
   {
-    "revision": "fb2f53ece856c8fb6951",
+    "revision": "24adae2310be78c95326",
     "url": "/Breathe-app/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "c82a2b6cf909506e793c",
+    "revision": "96e307f80115bd693920",
     "url": "/Breathe-app/static/css/main.d585d8ac.chunk.css"
   },
   {
-    "revision": "fb2f53ece856c8fb6951",
-    "url": "/Breathe-app/static/js/2.f5472cda.chunk.js"
+    "revision": "24adae2310be78c95326",
+    "url": "/Breathe-app/static/js/2.6f9d6dfd.chunk.js"
   },
   {
     "revision": "283e247fcd70152d45e39e6e5a17cbed",
-    "url": "/Breathe-app/static/js/2.f5472cda.chunk.js.LICENSE.txt"
+    "url": "/Breathe-app/static/js/2.6f9d6dfd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c82a2b6cf909506e793c",
-    "url": "/Breathe-app/static/js/main.9409d146.chunk.js"
+    "revision": "96e307f80115bd693920",
+    "url": "/Breathe-app/static/js/main.6d85b1e0.chunk.js"
   },
   {
     "revision": "f093678bb22c5af2a636",
@@ -40,14 +40,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Breathe-app/static/media/info.fd40061b.svg"
   },
   {
-    "revision": "b7651a07d1161cbd8e630867f8e4e096",
-    "url": "/Breathe-app/static/media/left-arrow.b7651a07.svg"
-  },
-  {
-    "revision": "7a5faec50bb2b6016dcee26637c8130c",
-    "url": "/Breathe-app/static/media/left-down-arrow.7a5faec5.svg"
-  },
-  {
     "revision": "43d6cc86765d37a9b46305b6f54d3e26",
     "url": "/Breathe-app/static/media/logo.43d6cc86.svg"
   },
@@ -58,22 +50,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "86bb7cf72ea0fb5ef209d8b1aee57ba2",
     "url": "/Breathe-app/static/media/nose.86bb7cf7.svg"
-  },
-  {
-    "revision": "6d773645d6c0a7e83a35e07fd42a4e5d",
-    "url": "/Breathe-app/static/media/pause-2.6d773645.svg"
-  },
-  {
-    "revision": "651533e96b07972b5a21617e9a17065d",
-    "url": "/Breathe-app/static/media/right-arrow.651533e9.svg"
-  },
-  {
-    "revision": "8133933d4166bb5d4ac4bec44bf1ebfd",
-    "url": "/Breathe-app/static/media/right-down-arrow.8133933d.svg"
-  },
-  {
-    "revision": "11fb3c18520c735e6c5e55ecaba47d7d",
-    "url": "/Breathe-app/static/media/smiley.11fb3c18.svg"
   },
   {
     "revision": "8a0e3abc08f5720ee6125d6d2d3d36b8",
