@@ -22,7 +22,7 @@ const ExhaleAnimation = () => {
     setMessage(message);
     let isTimerOn = true;
     setTimer(isTimerOn)
-  }, []);
+  }, [t]);
   
   
   let stopTimer = () => {

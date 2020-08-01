@@ -1,6 +1,4 @@
 {
-  "eng": {
-    "translation": {
       "MAIN_MENU": {
         "TEST_BUTTON": "Test",
         "EXERCISE_BUTTON": "Your Exercises",
@@ -47,6 +45,4 @@
         "SECONDS_1": "sekundy",
         "SECONDS_2": "sekund"
       }
-    }
-  }
 }

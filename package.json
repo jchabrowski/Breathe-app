@@ -10,6 +10,7 @@
     "bootstrap": "^4.4.1",
     "framer-motion": "^1.10.2",
     "i18next": "^19.6.3",
+    "i18next-xhr-backend": "^3.2.2",
     "pluralize": "^8.0.0",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0",
