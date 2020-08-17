@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8e9e6325fe94f7847bf007387d4b364",
+    "revision": "7f12a4b5cbbcef31051e862110f3fc03",
     "url": "/Breathe-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Breathe-app/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "5de0a3b7283d61bda485",
+    "revision": "0d398aecbceec8180b7d",
     "url": "/Breathe-app/static/css/main.d585d8ac.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Breathe-app/static/js/2.9a42086e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5de0a3b7283d61bda485",
-    "url": "/Breathe-app/static/js/main.22ece57a.chunk.js"
+    "revision": "0d398aecbceec8180b7d",
+    "url": "/Breathe-app/static/js/main.88dba32d.chunk.js"
   },
   {
     "revision": "f093678bb22c5af2a636",
