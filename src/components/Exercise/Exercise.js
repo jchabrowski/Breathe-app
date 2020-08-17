@@ -43,7 +43,7 @@ const Exercise = () => {
       clearInterval(animationInterval);
       let currentAnimation = <ThankYouAnimation />
       setAnimation(currentAnimation);
-    }, 60000)
+    }, 600000)
   }, []);
 
   return (
