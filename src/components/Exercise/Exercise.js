@@ -37,13 +37,13 @@ const Exercise = () => {
           i = 0;
         }
       breathingAnimation();
-    }, 4000);
+    }, 5000);
     
     setTimeout(() => {
       clearInterval(animationInterval);
       let currentAnimation = <ThankYouAnimation />
       setAnimation(currentAnimation);
-    }, 600000)
+    }, 60000)
   }, []);
 
   return (

@@ -8,7 +8,6 @@ import Exercise from './components/Exercise/Exercise';
 import Info from './components/Info/Info';
 import { HashRouter, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-
 import './App.css';
 
 function App() {
