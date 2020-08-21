@@ -37,7 +37,7 @@ const Exercise = () => {
           i = 0;
         }
       breathingAnimation();
-    }, 5000);
+    }, 7000);
     
     setTimeout(() => {
       clearInterval(animationInterval);
