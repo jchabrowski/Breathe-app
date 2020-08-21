@@ -31,13 +31,15 @@ const Exercise = () => {
       setAnimation(currentAnimation);
     }
 
+    const ANIMATION_TIME_CHANGE = 7000;
+
     const animationInterval = setInterval(() => {
       i++
         if(i >= animationArray.length) {
           i = 0;
         }
       breathingAnimation();
-    }, 7000);
+    }, ANIMATION_TIME_CHANGE);
     
     setTimeout(() => {
       clearInterval(animationInterval);
