@@ -2,7 +2,7 @@
 
 🌬️ Master's degree web application. Created for respiratory patients with breathing problems. 
 <br>
-Major goal of the app was to provide simple breathing exercises for the elderly & to estimate their approximate exhalation volume.
+The main goal of the app was to provide simple breathing exercises for the elderly & to estimate their approximate exhalation volume.
 <br>
 
 <h3>Project goals: </h3>
