@@ -14,10 +14,10 @@ Major goal of the app was to provide simple breathing exercises for the elderly 
 
 -----
 
-![image](https://user-images.githubusercontent.com/51097988/117580853-3d330b00-b0fa-11eb-8410-e5e8ad9b96b8.png)
+![image](https://user-images.githubusercontent.com/51097988/117581172-d3b3fc00-b0fb-11eb-9eed-c57234b57cff.png)
 <br>
-![image](https://user-images.githubusercontent.com/51097988/117580979-afa3eb00-b0fa-11eb-90f3-28203c78fdd9.png)
+![image](https://user-images.githubusercontent.com/51097988/117581209-fd6d2300-b0fb-11eb-8853-ad7d93031bef.png)
 <br>
-![image](https://user-images.githubusercontent.com/51097988/117580939-84210080-b0fa-11eb-94e2-3ea135f0834b.png)
+![image](https://user-images.githubusercontent.com/51097988/117581191-ed554380-b0fb-11eb-99cd-5535500c411e.png)
 <br>
-![image](https://user-images.githubusercontent.com/51097988/117580996-cc402300-b0fa-11eb-9995-30c218f94158.png)
+![image](https://user-images.githubusercontent.com/51097988/117581161-bd0da500-b0fb-11eb-958a-02520a97fe54.png)
