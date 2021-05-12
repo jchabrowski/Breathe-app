@@ -13,6 +13,19 @@ The main goal of the app was to provide simple breathing exercises for the elder
 🎯 Graduate 😉
 
 -----
+<h3>Installation</h3>
+Install packages with npm 
+
+```
+npm install
+```
+
+Run on localhost:3000
+```
+npm start
+```
+
+-----
 
 ![image](https://user-images.githubusercontent.com/51097988/117581172-d3b3fc00-b0fb-11eb-9eed-c57234b57cff.png)
 <br>
